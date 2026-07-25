@@ -1,0 +1,13 @@
+name = "Chloride"
+filename = "chloride-NEOFORGE-mc26.2-v1.8.1.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/yD9qW65f/versions/uagAKV7L/chloride-NEOFORGE-mc26.2-v1.8.1.jar"
+hash-format = "sha512"
+hash = "482150c4ba9c415f228be7543b68c4746ed5603c328060a796a49d20ee6e4d2bcbfce5dbf17999de0fb8afc4e6139c1f88109fc75497e0406cd9c55d2b703049"
+
+[update]
+[update.modrinth]
+mod-id = "yD9qW65f"
+version = "uagAKV7L"
