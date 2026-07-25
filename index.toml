@@ -1,2 +1,146 @@
 hash-format = "sha256"
-files = []
+
+[[files]]
+file = "mods/alternate-current.pw.toml"
+hash = "7b8e602ec3ca5e6e03b4fd84ac147b260cee1272d03e612bc8550244ac210aab"
+metafile = true
+
+[[files]]
+file = "mods/apexcore.pw.toml"
+hash = "8dd033ec6443ebde4f62df683040341b1514fc713b6f85589022ba6aaa1f0857"
+metafile = true
+
+[[files]]
+file = "mods/appleskin.pw.toml"
+hash = "944104c0ced6f5d5a7dae365d0b76a86f13e99ccbf0f93d0fde609c64fac304f"
+metafile = true
+
+[[files]]
+file = "mods/balm.pw.toml"
+hash = "03365c5a84fe876d07433798e5166efa2804c8ba593321dc7cd8bf7a2b9da7cf"
+metafile = true
+
+[[files]]
+file = "mods/c2me-neoforge.pw.toml"
+hash = "f5542a92c143aedd1e3e8315555ba912648d5a372336eda26f6efefea7b2f9a6"
+metafile = true
+
+[[files]]
+file = "mods/chloride.pw.toml"
+hash = "847d74d5397cef1b17fd8096a598325c0c25dd3d4bbb5c78ca6b2bf2c264e867"
+metafile = true
+
+[[files]]
+file = "mods/crop-and-kettle.pw.toml"
+hash = "d54bffc0be012712a0c7b5d742db029b406de0dbfebc757aa02fe8f2cc95b26d"
+metafile = true
+
+[[files]]
+file = "mods/dungeons-and-taverns.pw.toml"
+hash = "a1124fc43bbe79a14fe02373e8ccb7280ef06e79fa27cbedc7f808fcfce9724d"
+metafile = true
+
+[[files]]
+file = "mods/fantasy-furniture.pw.toml"
+hash = "a0cf29d68abec433349fdd80fc0cfea3d285349dc53d11782d611bb5b25887a2"
+metafile = true
+
+[[files]]
+file = "mods/ferrite-core.pw.toml"
+hash = "ecd9e70faca5584f8cb488905c333f9eeef03193674f03692a7bb32f1283fcdc"
+metafile = true
+
+[[files]]
+file = "mods/jade.pw.toml"
+hash = "38ee01d5fa47b0f06632a89b8042602670dc589b06b35661577d838b449c337a"
+metafile = true
+
+[[files]]
+file = "mods/lithium.pw.toml"
+hash = "9ce6749e18cac4d1c78471ec65fee8e5fd0c5dcb1b807a97f6c9197c07310625"
+metafile = true
+
+[[files]]
+file = "mods/lithostitched.pw.toml"
+hash = "76dd70586c22cd1164cf85f46dd941af83a63638645474992428003a73fc9af0"
+metafile = true
+
+[[files]]
+file = "mods/macaws-furniture.pw.toml"
+hash = "601775f83729132263bca30d4d41d777439763f0fbc9dd76ac064a9896797603"
+metafile = true
+
+[[files]]
+file = "mods/macaws-roofs.pw.toml"
+hash = "674c1d1664a19bd34c7feef28aaf9a026610cee11fc365f59565547b2165f7b6"
+metafile = true
+
+[[files]]
+file = "mods/moogs-structure-lib.pw.toml"
+hash = "a801c785b2fcfa46d51f7ccd61473ab65110b3f646350fcaa95a80cfd93599db"
+metafile = true
+
+[[files]]
+file = "mods/moogs-voyager-structures.pw.toml"
+hash = "dfc7697d70c9adf6006d06a3aeb681825dd1cd44250e34c7508193e86e4b9b2b"
+metafile = true
+
+[[files]]
+file = "mods/more-mobs.pw.toml"
+hash = "3f4e59fb3ea163968601be928ee437928f3be0a435ca8dc8ad4ad73883e5caf1"
+metafile = true
+
+[[files]]
+file = "mods/open-parties-and-claims.pw.toml"
+hash = "c41a9ecf949c9b01bfcdbaf042517717247438344818648f05d397419ff84bf1"
+metafile = true
+
+[[files]]
+file = "mods/scalablelux.pw.toml"
+hash = "8099bea3243d1b726c352a1d3b702fdbb652fec653dda4598de9beee3bef7694"
+metafile = true
+
+[[files]]
+file = "mods/serene-seasons.pw.toml"
+hash = "37adb807b59d916df21ee751467432ddcc37684ad160e94059d96380c574ed09"
+metafile = true
+
+[[files]]
+file = "mods/shogi.pw.toml"
+hash = "c6822b81a65fc99c8aedde39c1f7f82daf151ab5f9589aca90cc92efdd2b4d0b"
+metafile = true
+
+[[files]]
+file = "mods/simple-voice-chat.pw.toml"
+hash = "a1c595aeec83666e83c90578e8c01abaa3d6119b18f7f96a2e2bf15f0a86e2ef"
+metafile = true
+
+[[files]]
+file = "mods/sodium.pw.toml"
+hash = "6dce38e217c6b652012182ecb9ff0ace868363e189e8c091ee220e86aa981ee8"
+metafile = true
+
+[[files]]
+file = "mods/terralith.pw.toml"
+hash = "baab89c75cb7ff9d86026d61392e2ff983ed78fe59ebb26cf2012a83485e0cfd"
+metafile = true
+
+[[files]]
+file = "mods/waystones.pw.toml"
+hash = "46d7aece8498a803f16b486976c266f69b0680608a1518356d84798d4345b09c"
+metafile = true
+
+[[files]]
+file = "mods/wilder-flowers.pw.toml"
+hash = "d965cf3b481e9a17f945d6c36a0ac48c64a87e7ad34f6e01fce24672fe3fa7b6"
+metafile = true
+
+[[files]]
+file = "mods/xaeros-minimap.pw.toml"
+hash = "8f988e40608b55e0ceaf090175572ac9a021fdb83bec8610a8e029fbf8b66a73"
+metafile = true
+
+[[files]]
+file = "mods/xaeros-world-map.pw.toml"
+hash = "0d5072ba6ce891c8b0b40d0c6489cc3a3ca7d6c8fda71fa1666ef3f21e9773dd"
+metafile = true
