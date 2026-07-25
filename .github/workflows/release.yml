@@ -1,0 +1,136 @@
+name: Release
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  # ── 1. Release Please gestiona versión y changelog ──────────────────────────
+  release-please:
+    runs-on: ubuntu-latest
+    outputs:
+      release_created: ${{ steps.rp.outputs.release_created }}
+      tag_name: ${{ steps.rp.outputs.tag_name }}
+      version: ${{ steps.rp.outputs.major }}.${{ steps.rp.outputs.minor }}.${{ steps.rp.outputs.patch }}
+    steps:
+      - uses: googleapis/release-please-action@v4
+        id: rp
+        with:
+          release-type: simple
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+  # ── 2. Build + publicar en CurseForge cuando se crea una release ─────────────
+  publish:
+    needs: release-please
+    if: ${{ needs.release-please.outputs.release_created == 'true' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.23"
+
+      - name: Install packwiz
+        run: go install github.com/packwiz/packwiz@latest
+
+      - name: Export CurseForge pack
+        run: packwiz curseforge export
+
+      - name: Find exported zip
+        id: zip
+        run: echo "path=$(ls *.zip | head -1)" >> $GITHUB_OUTPUT
+
+      - name: Get CurseForge game version IDs
+        id: cf_versions
+        env:
+          CF_API_KEY: ${{ secrets.CF_API_KEY }}
+        run: |
+          # Obtener IDs de versión para MC 26.2 y NeoForge
+          VERSIONS=$(curl -sf \
+            -H "x-api-key: $CF_API_KEY" \
+            "https://api.curseforge.com/v1/games/432/versions")
+
+          MC_VERSION_ID=$(echo "$VERSIONS" | python3 -c "
+          import json, sys
+          data = json.load(sys.stdin)
+          for group in data.get('data', []):
+              for v in group.get('versions', []):
+                  if v.get('name') == '26.2':
+                      print(v['id'])
+                      exit()
+          " 2>/dev/null)
+
+          NEOFORGE_VERSION_ID=$(echo "$VERSIONS" | python3 -c "
+          import json, sys
+          data = json.load(sys.stdin)
+          for group in data.get('data', []):
+              type_name = group.get('type', {}).get('name', '')
+              if 'NeoForge' in type_name or 'neoforge' in type_name.lower():
+                  versions = group.get('versions', [])
+                  if versions:
+                      print(versions[0]['id'])
+                      exit()
+          " 2>/dev/null)
+
+          echo "mc_id=$MC_VERSION_ID" >> $GITHUB_OUTPUT
+          echo "neoforge_id=$NEOFORGE_VERSION_ID" >> $GITHUB_OUTPUT
+          echo "MC version ID: $MC_VERSION_ID, NeoForge ID: $NEOFORGE_VERSION_ID"
+
+      - name: Upload to CurseForge
+        env:
+          CF_API_KEY: ${{ secrets.CF_API_KEY }}
+          CF_PROJECT_ID: ${{ secrets.CF_PROJECT_ID }}
+        run: |
+          VERSION="${{ needs.release-please.outputs.version }}"
+          ZIP_PATH="${{ steps.zip.outputs.path }}"
+
+          # Construir array de gameVersions (excluir vacíos)
+          GAME_VERSIONS="[]"
+          MC_ID="${{ steps.cf_versions.outputs.mc_id }}"
+          NF_ID="${{ steps.cf_versions.outputs.neoforge_id }}"
+          if [ -n "$MC_ID" ] && [ -n "$NF_ID" ]; then
+            GAME_VERSIONS="[$MC_ID, $NF_ID]"
+          elif [ -n "$MC_ID" ]; then
+            GAME_VERSIONS="[$MC_ID]"
+          fi
+
+          METADATA=$(python3 -c "
+          import json
+          meta = {
+            'changelog': open('CHANGELOG.md').read() if __import__('os').path.exists('CHANGELOG.md') else 'See GitHub releases.',
+            'changelogType': 'markdown',
+            'displayName': 'MSMP v$VERSION',
+            'releaseType': 'release',
+            'gameVersions': $GAME_VERSIONS
+          }
+          print(json.dumps(meta))
+          ")
+
+          HTTP_STATUS=$(curl -sf \
+            -H "x-api-key: $CF_API_KEY" \
+            -F "metadata=$METADATA;type=application/json" \
+            -F "file=@$ZIP_PATH" \
+            -o /tmp/cf_response.json \
+            -w "%{http_code}" \
+            "https://api.curseforge.com/v1/projects/$CF_PROJECT_ID/upload-file")
+
+          echo "CurseForge response (HTTP $HTTP_STATUS):"
+          cat /tmp/cf_response.json
+
+          if [ "$HTTP_STATUS" != "200" ]; then
+            echo "Upload failed with status $HTTP_STATUS"
+            exit 1
+          fi
+
+      - name: Attach zip to GitHub Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release upload "${{ needs.release-please.outputs.tag_name }}" \
+            "${{ steps.zip.outputs.path }}" --clobber
