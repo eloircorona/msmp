@@ -55,8 +55,8 @@ jobs:
           ZIP_PATH="${{ steps.zip.outputs.path }}"
 
           # IDs obtenidos de minecraft.curseforge.com/api/game/versions
-          # MC 26.2 (gameVersionTypeID: 1) → 16500
-          # NeoForge loader             → 10150
+          # MC 26.2 (gameVersionTypeID: 86297, slug: minecraft-26-2) → 16498
+          # NeoForge loader (gameVersionTypeID: 68441, slug: modloader) → 10150
           METADATA=$(python3 -c "
           import json, os
           changelog = open('CHANGELOG.md').read() if os.path.exists('CHANGELOG.md') else 'See GitHub releases.'
@@ -65,7 +65,7 @@ jobs:
             'changelogType': 'markdown',
             'displayName': 'MSMP v$VERSION',
             'releaseType': 'release',
-            'gameVersions': [16500, 10150]
+            'gameVersions': [16498, 10150]
           }
           print(json.dumps(meta))
           ")
