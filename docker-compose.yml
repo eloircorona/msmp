@@ -21,8 +21,8 @@ services:
     environment:
       EULA: "TRUE"
       TYPE: NEOFORGE
-      VERSION: "26.2"
-      NEOFORGE_VERSION: "26.2.0.32-beta"
+      VERSION: "1.21.1"
+      NEOFORGE_VERSION: "21.1.244"
       PACKWIZ_INSTALLER_MANIFEST: "http://pack/pack.toml"
 
       # Memory — ajusta según tu máquina (mínimo 3G para este pack)
