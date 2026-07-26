@@ -1,6 +1,30 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".dockerignore"
+hash = "e8408e240ebaf5c9ec16194b71279ab7a57dca9a910e12a2d527e91f00d1e67d"
+
+[[files]]
+file = ".github/workflows/release.yml"
+hash = "ecb915e431d592f7af3f5e3641b459247ab63012082b8bfeec2fc88bc4ea0a65"
+
+[[files]]
+file = "CHANGELOG.md"
+hash = "6cc6386368310babb934d817f228296a655dfc29fdc6de28cd4f3928bdc8aee3"
+
+[[files]]
+file = "Makefile"
+hash = "23e3579c8067d6a0b641dab41b6650d2d969e64216f79d7dbf92b429cd629022"
+
+[[files]]
+file = "README.md"
+hash = "1c2156d61c24315546522ce26b56146a80bc73af4967dd15cee7e0f11d27e5f8"
+
+[[files]]
+file = "docker-compose.yml"
+hash = "0718e34c1ff5faa9690f2f8259eed20e44986f0936c12e9e40afeb938506b6d9"
+
+[[files]]
 file = "mods/alternate-current.pw.toml"
 hash = "7b8e602ec3ca5e6e03b4fd84ac147b260cee1272d03e612bc8550244ac210aab"
 metafile = true
@@ -31,13 +55,33 @@ hash = "847d74d5397cef1b17fd8096a598325c0c25dd3d4bbb5c78ca6b2bf2c264e867"
 metafile = true
 
 [[files]]
+file = "mods/collective.pw.toml"
+hash = "8b3bbd261c8e3692775873b9c470cb6f7c9a21d96a3eac7a3e7ff7bc8b39ba32"
+metafile = true
+
+[[files]]
+file = "mods/corpse.pw.toml"
+hash = "c7875205a2224891e1c91f27951fecd66210a717ef22b3e964a4946c44653ddd"
+metafile = true
+
+[[files]]
 file = "mods/crop-and-kettle.pw.toml"
 hash = "d54bffc0be012712a0c7b5d742db029b406de0dbfebc757aa02fe8f2cc95b26d"
 metafile = true
 
 [[files]]
+file = "mods/daily-quests.pw.toml"
+hash = "a113843f411e8149d5dec8268e5ebf79aa4df45a9ea38efce7d442c9fd995ed0"
+metafile = true
+
+[[files]]
 file = "mods/dungeons-and-taverns.pw.toml"
 hash = "a1124fc43bbe79a14fe02373e8ccb7280ef06e79fa27cbedc7f808fcfce9724d"
+metafile = true
+
+[[files]]
+file = "mods/easy-villagers.pw.toml"
+hash = "6f99bb07509576caf42b05b88106d2dce572129742aa04d3ddc3ee89f74d2d70"
 metafile = true
 
 [[files]]
@@ -63,6 +107,11 @@ metafile = true
 [[files]]
 file = "mods/lithostitched.pw.toml"
 hash = "76dd70586c22cd1164cf85f46dd941af83a63638645474992428003a73fc9af0"
+metafile = true
+
+[[files]]
+file = "mods/luckperms.pw.toml"
+hash = "f45f6789625038480707429beaa0fed26ee65079698f5fda67e0f5bfcbc7ba6f"
 metafile = true
 
 [[files]]
@@ -96,6 +145,16 @@ hash = "c41a9ecf949c9b01bfcdbaf042517717247438344818648f05d397419ff84bf1"
 metafile = true
 
 [[files]]
+file = "mods/plasmo-voice.pw.toml"
+hash = "58501fb14f3176a870ae399d3daa851e262bef158cbeaccb8d7e7d100bcc14ef"
+metafile = true
+
+[[files]]
+file = "mods/puzzles-lib.pw.toml"
+hash = "0f123489b624a036a8e0244b52dd48bdec5833a5582a391a5262a8e750673a26"
+metafile = true
+
+[[files]]
 file = "mods/scalablelux.pw.toml"
 hash = "8099bea3243d1b726c352a1d3b702fdbb652fec653dda4598de9beee3bef7694"
 metafile = true
@@ -121,8 +180,33 @@ hash = "6dce38e217c6b652012182ecb9ff0ace868363e189e8c091ee220e86aa981ee8"
 metafile = true
 
 [[files]]
+file = "mods/sophisticated-backpacks.pw.toml"
+hash = "3003b0e0f7bd034832499f2a9bd352d4fca5097dd437e3fdd20d85af4a03f558"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-core.pw.toml"
+hash = "d83d07c158c99982c5c115366e95931e1705d5531a197dbe4d742eb95dfd4253"
+metafile = true
+
+[[files]]
+file = "mods/spark.pw.toml"
+hash = "b027f2051203f2c6ab528ed21e806c801effd5388ca6dbe215f4eea946616ab2"
+metafile = true
+
+[[files]]
 file = "mods/terralith.pw.toml"
 hash = "baab89c75cb7ff9d86026d61392e2ff983ed78fe59ebb26cf2012a83485e0cfd"
+metafile = true
+
+[[files]]
+file = "mods/tpa.pw.toml"
+hash = "7da35efc3b087e12b6f9759973c539697020b2a70fb2942ffe1054f741b10060"
+metafile = true
+
+[[files]]
+file = "mods/trading-post.pw.toml"
+hash = "f96efc6ce48de1531c7434176c2425cf4a42f8855c89b9b73e11e95896200425"
 metafile = true
 
 [[files]]
@@ -144,3 +228,7 @@ metafile = true
 file = "mods/xaeros-world-map.pw.toml"
 hash = "0d5072ba6ce891c8b0b40d0c6489cc3a3ca7d6c8fda71fa1666ef3f21e9773dd"
 metafile = true
+
+[[files]]
+file = "version.txt"
+hash = "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03"

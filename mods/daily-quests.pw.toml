@@ -1,0 +1,13 @@
+name = "Daily Quests"
+filename = "dailyquests-26.2.0-2.8.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/saq81j96/versions/wljY77AE/dailyquests-26.2.0-2.8.jar"
+hash-format = "sha512"
+hash = "d95bff0539c59825868e6baa4c0bfcf7a16de57e3cd1eb9b2e23f687c4e4ddd9bc6a04af3424b1ad622aabdd27c751a19e3148384d5e6e38e22e38aff0fbeec7"
+
+[update]
+[update.modrinth]
+mod-id = "saq81j96"
+version = "wljY77AE"

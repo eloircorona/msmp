@@ -1,0 +1,13 @@
+name = "Trading Post"
+filename = "TradingPost-v26.2.0-mc26.2.x-NeoForge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/8pcjMDgj/versions/B20OAApt/TradingPost-v26.2.0-mc26.2.x-NeoForge.jar"
+hash-format = "sha512"
+hash = "8d04053d18aa8cf0b6928cfa16fb04cc67364fbb31cbccc6f20ff81886442f4dc381431536826adcdc22df6561d0956cccad8efdeffa7d0f391dbf32babd1884"
+
+[update]
+[update.modrinth]
+mod-id = "8pcjMDgj"
+version = "B20OAApt"
