@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.1](https://github.com/eloircorona/msmp/compare/v1.0.0...v1.0.1) (2026-07-26)
+
+
+### Bug Fixes
+
+* **ci:** trigger release to test updated publish workflow ([d356e02](https://github.com/eloircorona/msmp/commit/d356e02b2700e7a0cbdf3ac1fdf4ac131292cbb6))
+* **ci:** use legacy CF API endpoint and hardcoded version IDs ([f2c06d2](https://github.com/eloircorona/msmp/commit/f2c06d2c3162bc67431e5cd1cae6aecaf9a0ab90))
+
 ## 1.0.0 (2026-07-26)
 
 
