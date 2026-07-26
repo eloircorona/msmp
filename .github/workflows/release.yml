@@ -46,42 +46,6 @@ jobs:
         id: zip
         run: echo "path=$(ls *.zip | head -1)" >> $GITHUB_OUTPUT
 
-      - name: Get CurseForge game version IDs
-        id: cf_versions
-        env:
-          CF_API_KEY: ${{ secrets.CF_API_KEY }}
-        run: |
-          # Obtener IDs de versión para MC 26.2 y NeoForge
-          VERSIONS=$(curl -sf \
-            -H "x-api-key: $CF_API_KEY" \
-            "https://api.curseforge.com/v1/games/432/versions")
-
-          MC_VERSION_ID=$(echo "$VERSIONS" | python3 -c "
-          import json, sys
-          data = json.load(sys.stdin)
-          for group in data.get('data', []):
-              for v in group.get('versions', []):
-                  if v.get('name') == '26.2':
-                      print(v['id'])
-                      exit()
-          " 2>/dev/null)
-
-          NEOFORGE_VERSION_ID=$(echo "$VERSIONS" | python3 -c "
-          import json, sys
-          data = json.load(sys.stdin)
-          for group in data.get('data', []):
-              type_name = group.get('type', {}).get('name', '')
-              if 'NeoForge' in type_name or 'neoforge' in type_name.lower():
-                  versions = group.get('versions', [])
-                  if versions:
-                      print(versions[0]['id'])
-                      exit()
-          " 2>/dev/null)
-
-          echo "mc_id=$MC_VERSION_ID" >> $GITHUB_OUTPUT
-          echo "neoforge_id=$NEOFORGE_VERSION_ID" >> $GITHUB_OUTPUT
-          echo "MC version ID: $MC_VERSION_ID, NeoForge ID: $NEOFORGE_VERSION_ID"
-
       - name: Upload to CurseForge
         env:
           CF_API_KEY: ${{ secrets.CF_API_KEY }}
@@ -90,35 +54,29 @@ jobs:
           VERSION="${{ needs.release-please.outputs.version }}"
           ZIP_PATH="${{ steps.zip.outputs.path }}"
 
-          # Construir array de gameVersions (excluir vacíos)
-          GAME_VERSIONS="[]"
-          MC_ID="${{ steps.cf_versions.outputs.mc_id }}"
-          NF_ID="${{ steps.cf_versions.outputs.neoforge_id }}"
-          if [ -n "$MC_ID" ] && [ -n "$NF_ID" ]; then
-            GAME_VERSIONS="[$MC_ID, $NF_ID]"
-          elif [ -n "$MC_ID" ]; then
-            GAME_VERSIONS="[$MC_ID]"
-          fi
-
+          # IDs obtenidos de minecraft.curseforge.com/api/game/versions
+          # MC 26.2 (gameVersionTypeID: 1) → 16500
+          # NeoForge loader             → 10150
           METADATA=$(python3 -c "
-          import json
+          import json, os
+          changelog = open('CHANGELOG.md').read() if os.path.exists('CHANGELOG.md') else 'See GitHub releases.'
           meta = {
-            'changelog': open('CHANGELOG.md').read() if __import__('os').path.exists('CHANGELOG.md') else 'See GitHub releases.',
+            'changelog': changelog,
             'changelogType': 'markdown',
             'displayName': 'MSMP v$VERSION',
             'releaseType': 'release',
-            'gameVersions': $GAME_VERSIONS
+            'gameVersions': [16500, 10150]
           }
           print(json.dumps(meta))
           ")
 
-          HTTP_STATUS=$(curl -sf \
-            -H "x-api-key: $CF_API_KEY" \
+          HTTP_STATUS=$(curl -s \
+            -H "X-Api-Token: $CF_API_KEY" \
             -F "metadata=$METADATA;type=application/json" \
             -F "file=@$ZIP_PATH" \
             -o /tmp/cf_response.json \
             -w "%{http_code}" \
-            "https://api.curseforge.com/v1/projects/$CF_PROJECT_ID/upload-file")
+            "https://minecraft.curseforge.com/api/projects/$CF_PROJECT_ID/upload-file")
 
           echo "CurseForge response (HTTP $HTTP_STATUS):"
           cat /tmp/cf_response.json
