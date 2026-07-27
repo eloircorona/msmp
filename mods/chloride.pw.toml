@@ -1,13 +1,13 @@
 name = "(Sodium) Chloride"
 filename = "chloride-NEOFORGE-mc1.21.1-v1.8.1.jar"
-side = "client"
+side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/yD9qW65f/versions/IgWRdE2d/chloride-NEOFORGE-mc1.21.1-v1.8.1.jar"
-hash-format = "sha512"
-hash = "dbe315d2e86275b503c71673440f7da97676f6c68893673ac6a9df6bd6cc51567b775fb5cf1bf78adb7aaeb850617821b639256d8abbb1084ed6bf7be654e0ef"
+hash-format = "sha1"
+hash = "50454011525e2862678b15d94484fd32a5a54dfb"
+mode = "metadata:curseforge"
 
 [update]
-[update.modrinth]
-mod-id = "yD9qW65f"
-version = "IgWRdE2d"
+[update.curseforge]
+file-id = 8462029
+project-id = 931925
