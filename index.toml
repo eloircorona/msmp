@@ -1,14 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = ".env"
-hash = "0b782778b479971ee7e73c4ac8e32e0764b2f26a48f295ac4886d4803ec9ddb1"
-
-[[files]]
-file = ".env.example"
-hash = "a06bb272f223c5e3003a7ad489940e843152e700fa3db34ec21c87396803a761"
-
-[[files]]
 file = "kubejs/assets/msmp/blockstates/mesa_banco.json"
 hash = "35dd24c406dd11f235e3d5c75cf0d9e57cfc451c75e0c797b716038450e26d10"
 

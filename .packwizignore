@@ -1,5 +1,7 @@
 .claude/**
 .claude
+.env
+.env.example
 docker-compose.yml
 Makefile
 README.md
