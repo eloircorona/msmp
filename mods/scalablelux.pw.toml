@@ -1,6 +1,6 @@
 name = "ScalableLux"
 filename = "ScalableLux-neoforge-0.3.0-alpha.0.6-all.jar"
-side = "both"
+side = "client"
 
 [download]
 hash-format = "sha1"

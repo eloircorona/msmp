@@ -1,2 +1,11 @@
 .claude/**
 .claude
+docker-compose.yml
+Makefile
+README.md
+CHANGELOG.md
+version.txt
+.dockerignore
+.gitignore
+.github/**
+scripts/**

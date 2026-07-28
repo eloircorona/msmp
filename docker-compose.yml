@@ -1,16 +1,4 @@
 services:
-  # Serves the packwiz pack files locally so mc can resolve mods via packwiz-installer
-  pack:
-    image: nginx:alpine
-    restart: unless-stopped
-    volumes:
-      - .:/usr/share/nginx/html:ro
-    healthcheck:
-      test: ["CMD", "wget", "-q", "-O-", "http://localhost/pack.toml"]
-      interval: 5s
-      timeout: 3s
-      retries: 5
-
   mc:
     image: itzg/minecraft-server:latest
     restart: unless-stopped
@@ -23,7 +11,7 @@ services:
       TYPE: NEOFORGE
       VERSION: "1.21.1"
       NEOFORGE_VERSION: "21.1.244"
-      PACKWIZ_INSTALLER_MANIFEST: "http://pack/pack.toml"
+      PACKWIZ_URL: "https://raw.githubusercontent.com/eloircorona/msmp/main/pack.toml"
 
       # Memory — ajusta según tu máquina (mínimo 3G para este pack)
       MEMORY: "4G"
@@ -45,9 +33,6 @@ services:
 
     volumes:
       - mc-data:/data
-    depends_on:
-      pack:
-        condition: service_healthy
 
 volumes:
   mc-data:
