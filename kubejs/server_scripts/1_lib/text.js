@@ -42,4 +42,30 @@ const MText = {
     }, header)
     return lines
   },
+
+  // Tablero de misiones del día. Recibe los quest defs y el playerData.
+  questBoard: (questDefs, data) => {
+    const out = Text.empty()
+      .append(Text.gold(`━━ Misiones (día ${data.day}) ━━\n`))
+    questDefs.forEach((q, i) => {
+      const prog    = data.progress[i]
+      const claimed = data.claimed[i]
+      const done    = prog >= q.amount
+      const statusText = claimed  ? Text.darkGray('[★]')
+                       : done     ? Text.green('[✓]')
+                       : prog > 0 ? Text.yellow('[▶]')
+                       :            Text.gray('[ ]')
+      out
+        .append(Text.white(` ${i + 1}. `))
+        .append(statusText)
+        .append(Text.white(' ' + q.label))
+        .append(Text.gray(`  ${prog}/${q.amount}  `))
+        .append(Text.gold(q.reward + ' '))
+        .append(Text.green(MSMP.ECONOMY.SYMBOL))
+      if (done && !claimed)
+        out.append(Text.aqua('  ← reclamar ' + (i + 1)))
+      out.append(Text.white('\n'))
+    })
+    return out
+  },
 }
