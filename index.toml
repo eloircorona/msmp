@@ -155,7 +155,7 @@ metafile = true
 
 [[files]]
 file = "mods/daily-quests.pw.toml"
-hash = "7a1bc54744c065b81fc6edfe140c945819405a7cc0cf3c609c32ddce2675b23d"
+hash = "10c15212225b200b0065e2123dfe072a7c2c68ab23811cf528e535ace0845bf8"
 metafile = true
 
 [[files]]
