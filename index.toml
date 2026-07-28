@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".env"
+hash = "0b782778b479971ee7e73c4ac8e32e0764b2f26a48f295ac4886d4803ec9ddb1"
+
+[[files]]
 file = ".env.example"
 hash = "a06bb272f223c5e3003a7ad489940e843152e700fa3db34ec21c87396803a761"
 
@@ -334,12 +338,12 @@ metafile = true
 
 [[files]]
 file = "mods/yungs-api.pw.toml"
-hash = "6d6e832992f8af3bfd90232e3582e4e11eb42901d16a747a81eea5b811489be3"
+hash = "d9c0c9209bac0b693af2a7c1e47ffb28d366bad19c91df31dc6d345fa75250a1"
 metafile = true
 
 [[files]]
 file = "mods/yungs-better-dungeons.pw.toml"
-hash = "e69be521bff22311441c2ea7925bb797b685c18a77757378f8788b135548a8ee"
+hash = "4c2830674a08ec9f10af13e4d259aa60158bd306a3996d935e678281ec0cb5fd"
 metafile = true
 
 [[files]]
@@ -349,7 +353,7 @@ metafile = true
 
 [[files]]
 file = "mods/yungs-better-strongholds.pw.toml"
-hash = "3c30c032674bfd22ef88cf87dcfd4445c7dbc86bf05dc7f14df584c30315aee0"
+hash = "1a33e6d64e88ad59b65d126c6457d582e62724167349ea184eb237435298985e"
 metafile = true
 
 [[files]]
