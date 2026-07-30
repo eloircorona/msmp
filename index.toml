@@ -154,6 +154,11 @@ hash = "e2edf339c98dbdcf04f46a15276e9b1b5bbdeee0f1ac8b7d9bddb1ee8e54b9a1"
 metafile = true
 
 [[files]]
+file = "mods/dungeon-and-taverns.pw.toml"
+hash = "042ff6bd1253a58e93d7ee172a2d565b0c8dedb1b88d0cb5ff7d2c9e73a04141"
+metafile = true
+
+[[files]]
 file = "mods/dungeons-and-taverns.pw.toml"
 hash = "b9244dca740d333c22f3425991fdd2fd40d3ae12384079a40a6fb7d4bca18a18"
 metafile = true
@@ -230,7 +235,7 @@ metafile = true
 
 [[files]]
 file = "mods/plasmo-voice.pw.toml"
-hash = "981284d219e27eed15834e024885e89e445c15aa3b07158080438b9f82dce8b6"
+hash = "e6c446c8a5de5f57beb5680462574e402bc0e019a011d6f2ad25773d3cc4841f"
 metafile = true
 
 [[files]]
