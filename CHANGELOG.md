@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/eloircorona/msmp/compare/v1.2.0...v1.3.0) (2026-07-31)
+
+
+### Features
+
+* **mods:** migrate Alex's Mobs and YUNG's API to CurseForge metadata ([74bd0ce](https://github.com/eloircorona/msmp/commit/74bd0ce96c0682316a59dfa8b1b3ef3bff0c7917))
+
 ## [1.2.0](https://github.com/eloircorona/msmp/compare/v1.1.0...v1.2.0) (2026-07-30)
 
 
