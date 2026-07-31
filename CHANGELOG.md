@@ -6,6 +6,7 @@
 ### Features
 
 * **kubejs:** add daily quest system (mine/kill/craft, 3/day) ([d9cf415](https://github.com/eloircorona/msmp/commit/d9cf4159f2cb9320303ec59ef0eef3cf2a7c8469))
+* **mods:** migrate Alex's Mobs and YUNG's API to CurseForge metadata ([74bd0ce](https://github.com/eloircorona/msmp/commit/74bd0ce))
 * **mods:** migrate Plasmo Voice to CurseForge metadata and record packaging conventions ([0dbb63a](https://github.com/eloircorona/msmp/commit/0dbb63afc0194e752239128c155be0347f13703e))
 
 
