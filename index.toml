@@ -70,7 +70,7 @@ hash = "d222081119a7e6ac615df865ab8391e2b822f4c50906d80a591e013f968ff0f5"
 
 [[files]]
 file = "kubejs/server_scripts/2_domain/role_service.js"
-hash = "bfa625f1d5beb99c770f9191b5dd93fdf052ceaa022b2671bc56949f9dae6689"
+hash = "c1271f5e6a99fc7cbddab6c336152e55bf30764ea2e008e90c251677ff45039b"
 
 [[files]]
 file = "kubejs/server_scripts/3_app/bank_handler.js"
