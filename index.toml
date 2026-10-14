@@ -5,6 +5,26 @@ file = "GEMINI.md"
 hash = "7c7e43b2e9fba254af20950918dfa6d46a422588878ee35f4cd69ec18472004f"
 
 [[files]]
+file = "config/quark-common.toml"
+hash = "517b765d8a193f6943109d93d4295efe8854d4260bed9c09a6a3e08773e20e22"
+
+[[files]]
+file = "config/sereneseasons/seasons.toml"
+hash = "1d24f3fb197ae10160a229f8699c056795770e0231239ff71399dbdc25afb2dd"
+
+[[files]]
+file = "config/supplementaries-common.toml"
+hash = "38542bb802affcb860dbb247b3795feb8a4266069b8fc60ac12e550e38c0fe24"
+
+[[files]]
+file = "config/xaero/minimap/default_radar_categories_client.json"
+hash = "518732b1eea3c0d0e4f388192992d707b8c2a9f1308e084d600af5d69a88ce77"
+
+[[files]]
+file = "config/xaero/minimap/default_radar_categories_server.json"
+hash = "d7d9f2858e4d698ea86df32335797fc215ba36c986e235ed7aaff648d8c0aba8"
+
+[[files]]
 file = "kubejs/assets/msmp/blockstates/mesa_banco.json"
 hash = "35dd24c406dd11f235e3d5c75cf0d9e57cfc451c75e0c797b716038450e26d10"
 
