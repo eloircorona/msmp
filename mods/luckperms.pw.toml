@@ -1,6 +1,6 @@
 name = "LuckPerms"
 filename = "LuckPerms-NeoForge-5.4.140.jar"
-side = "both"
+side = "server"
 
 [download]
 hash-format = "sha1"
