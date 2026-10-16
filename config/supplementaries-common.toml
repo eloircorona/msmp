@@ -1,0 +1,604 @@
+[redstone]
+	wind_vane = false
+	clock_block = false
+	redstone_illuminator = false
+	crank = false
+	cog_block = false
+	gold_door = false
+	gold_trapdoor = false
+	lock_block = false
+	relayer = false
+
+	[redstone.speaker_block]
+		enabled = false
+		narrator_enabled = true
+		# Default: 32
+		# Range: 0 ~ 10000
+		max_text = 32
+		# Default: 64
+		# Range: 0 ~ 100000000
+		range = 64
+
+	[redstone.bellows]
+		enabled = false
+		# Default: 78
+		# Range: 1 ~ 512
+		base_period = 78
+		# Default: 2.0
+		# Range: 0.0 ~ 16.0
+		power_scaling = 2.0
+		# Default: 5.0
+		# Range: 0.0 ~ 64.0
+		base_velocity_scaling = 5.0
+		# Default: 5
+		# Range: 0 ~ 16
+		range = 5
+
+	[redstone.spring_launcher]
+		enabled = false
+		# Default: 1.5
+		# Range: 0.0 ~ 16.0
+		velocity = 1.5
+		# Default: 5
+		# Range: 0 ~ 512
+		fall_height_required = 5
+
+	[redstone.enderman_head]
+		enabled = false
+		drop_head = true
+		# Default: 15
+		# Range: 0 ~ 10000
+		ticks_to_increase_power = 15
+		work_from_any_side = false
+
+	[redstone.turn_table]
+		enabled = false
+		rotate_entities = true
+		shuffle_containers = true
+
+	[redstone.pulley_block]
+		enabled = false
+		continuous_retraction = true
+		cooperative_pulleys = true
+		# Default: 8
+		# Range: 1 ~ 128
+		pull_limit = 8
+		# Default: 4
+		# Range: 2 ~ 100
+		pull_interval = 4
+		# Default: 0.035
+		# Range: 0.0 ~ 1.0
+		mineshaft_elevator = 0.035
+
+	[redstone.dispenser_minecart]
+		enabled = false
+		adjust_projectile_angle = true
+
+	[redstone.faucet]
+		enabled = false
+		spill_items = true
+		fill_entities_below = false
+
+	[redstone.crystal_display]
+		enabled = false
+		chaining = true
+
+[functional]
+	fodder = true
+	hourglass = false
+
+	[functional.rope]
+		enabled = true
+		block_side_attachment = true
+		slide_on_fall = true
+		horizontal_ropes = true
+		#Allowed Values: REPLACE, NONE, REMOVE
+		replace_in_loot_tables = "NONE"
+
+	[functional.jar]
+		enabled = true
+		# Default: 12
+		# Range: 0 ~ 1024
+		capacity = 12
+		drink_from_jar = false
+		drink_from_jar_item = false
+		jar_auto_detect = false
+		jar_capture = true
+		jar_cookies = true
+		jar_liquids = true
+
+	[functional.cage]
+		enabled = false
+		allow_all_mobs = false
+		cage_allow_all_babies = false
+		cage_auto_detect = false
+		persistent_mobs = false
+		# Default: 100
+		# Range: 1 ~ 100
+		health_threshold = 100
+		require_taming = true
+
+	[functional.safe]
+		enabled = false
+		prevent_breaking = false
+		simple_safes = false
+
+	[functional.sack]
+		enabled = false
+		sack_penalty = true
+		# Default: 2
+		# Range: 1 ~ 50
+		sack_increment = 2
+		# Default: 9
+		# Range: 1 ~ 27
+		slots = 9
+
+	[functional.bamboo_spikes]
+		enabled = false
+		tipped_spikes = true
+		player_loot = false
+		only_allow_harmful_effects = true
+		populate_creative_tab = true
+
+	[functional.urn]
+		enabled = false
+		# Default: 0.01
+		# Range: 0.0 ~ 1.0
+		critter_spawn_chance = 0.01
+		cave_urns = true
+
+	[functional.soap]
+		enabled = false
+		block_cleaning_enabled = true
+		clean_blacklist = ["minecraft:glazed_terracotta", "botania:mystical_flower", "mna:chimerite_crystal", "botania:floating_flower", ",minecraft:mushroom", "botania:mushroom", "botania:tall_mystical_flower", "botania:petal_block", "morered:network_cable", "xycraft_world:glowing_shiny_aurey_block", "xycraft_world:shiny_aurey_block", "xycraft_world:rgb_lamp", "xycraft_world:glowing_rgb_viewer", "xycraft_world:glowing_matte_rgb_block", "xycraft_world:rgb_lamp_pole"]
+
+		[functional.soap.special_blocks]
+			"quark:dirty_glass" = "minecraft:glass"
+			"#alexscaves:cave_paintings" = "alexscaves:smooth_limestone"
+			"quark:dirty_glass_pane" = "minecraft:glass_pane"
+
+	[functional.cannon]
+		enabled = false
+		#Allowed Values: IGNITE, IGNITE_ON_IMPACT, NONE
+		explode_tnt = "IGNITE"
+		# Default: 0.6
+		# Range: 0.0 ~ 5.0
+		fire_power = 0.6
+		# Default: 40
+		# Range: 0 ~ 500
+		fuse_time = 40
+		# Default: 60
+		# Range: 0 ~ 500
+		cooldown = 60
+		music_disc_heave_ho = true
+
+		[functional.cannon.cannon_boat]
+			enabled = false
+			# Default: 0.5
+			# Range: 0.0 ~ 5.0
+			recoil_multiplier = 0.5
+
+		[functional.cannon.cannonball]
+			enabled = false
+			# Default: 3.5
+			# Range: 0.0 ~ 100.0
+			power_scaling = 3.5
+			# Default: 1.1
+			# Range: 0.0 ~ 10.0
+			break_radius = 1.1
+
+		[functional.cannon.plunderer]
+			enabled = false
+			galleon = true
+
+	[functional.present]
+		enabled = true
+		trapped_present = true
+
+	[functional.flax]
+		enabled = false
+		wild_flax = true
+
+	[functional.lumisene]
+		enabled = false
+		# Default: 50
+		# Range: 0 ~ 10000
+		flammable_from_lumisene_block_duration = 50
+
+		[functional.lumisene.lumisene_bottle]
+			enabled = false
+			# Default: 300
+			# Range: 0 ~ 10000
+			flammable_duration = 300
+			# Default: 200
+			# Range: 0 ~ 10000
+			glowing_duration = 200
+
+[building]
+	lapis_bricks = false
+	brittlestone = false
+	deepslate_lamp = false
+	end_stone_lamp = false
+	blackstone_lamp = false
+	stone_lamp = false
+	stone_tile = false
+	blackstone_tile = false
+	bunting = false
+	pancake = false
+	checker_block = false
+	raked_gravel = false
+	feather_block = false
+	statue = true
+	doormat = false
+	flint_block = false
+	fine_wood = false
+	candle_holder = false
+	fire_pit = false
+	wicker_fence = false
+
+	[building.spider_head]
+		enabled = false
+
+	[building.barnacles]
+		enabled = false
+
+	[building.blackboard]
+		enabled = true
+		colored_blackboard = false
+		#Allowed Values: BOTH, GUI, MANUAL
+		interaction_mode = "BOTH"
+
+	[building.gravel_bricks]
+		enabled = false
+		allow_breaking = true
+
+	[building.slidy_block]
+		enabled = false
+		# Default: 0.125
+		# Range: 0.0 ~ 1.0
+		speed = 0.125
+
+	[building.timber_frame]
+		enabled = false
+		swap_on_shift = false
+		axes_strip = true
+		replace_daub = true
+
+	[building.iron_gate]
+		enabled = false
+		double_opening = true
+		door-like_gates = false
+
+	[building.gold_bars]
+		enabled = false
+
+	[building.item_shelf]
+		enabled = false
+		climbable_shelves = false
+
+	[building.sugar_cube]
+		enabled = false
+		# Default: 10
+		# Range: 0 ~ 1000
+		horse_speed_duration = 10
+
+	[building.planter]
+		enabled = false
+		broken_by_sapling = false
+		rich_soil_planter = true
+
+	[building.notice_board]
+		enabled = true
+		allow_any_item = false
+		gui = true
+
+	[building.pedestal]
+		enabled = true
+		# Default: 3.0
+		# Range: 0.0 ~ 100.0
+		crystal_enchanting = 3.0
+
+	[building.ash]
+		enabled = false
+		# Default: 1.0
+		# Range: 0.0 ~ 1.0
+		ash_from_fire_chance = 1.0
+		ash_from_burning_mobs = true
+		rain_wash_ash = true
+		basalt_ash = true
+
+	[building.flag]
+		enabled = true
+		stick_pole = true
+		# Default: 16
+		# Range: 0 ~ 256
+		pole_length = 16
+
+	[building.goblet]
+		enabled = true
+		allow_drinking = true
+
+	[building.globe]
+		enabled = false
+		show_coordinates = true
+		sepia_globe = true
+
+	[building.way_sign]
+		enabled = true
+
+		[building.way_sign.road_signs]
+			enabled = true
+			show_distance_text = true
+			# Default: 200
+			# Range: 0 ~ 1000
+			max_search_radius = 200
+			exit_search_early = true
+			# Default: 12
+			# Range: 1 ~ 100
+			max_structures_searches = 12
+
+	[building.daub]
+		enabled = false
+		wattle_and_daub = true
+
+	[building.ash_bricks]
+		enabled = false
+
+	[building.hat_stand]
+		enabled = false
+		unrestricted = false
+
+	[building.awning]
+		enabled = true
+		slant = true
+		shift_through = true
+		# Default: 69.44395478041653
+		# Range: 0.0 ~ 90.0
+		angle = 69.44395478041653
+
+	[building.flower_box]
+		enabled = false
+		simple_mode = true
+
+	[building.netherite_doors]
+		door = false
+		trapdoor = false
+		unbreakable = false
+
+	[building.sconce]
+		enabled = false
+		sconce_lever = false
+
+[tools]
+	candy = false
+	stasis = false
+	altimeter = false
+	confetti_popper = true
+
+	[tools.quiver]
+		enabled = true
+		use_without_slow = true
+		# Default: 6
+		# Range: 1 ~ 9
+		slots = 6
+		# Default: 0.03
+		# Range: 0.0 ~ 1.0
+		quiver_skeleton_spawn_chance = 0.03
+		quiver_skeleton_spawn_depend_on_global_difficulty = true
+		only_works_in_curio = false
+		quiver_pickup = true
+
+	[tools.lunch_basket]
+		enabled = true
+		placeable = true
+		# Default: 6
+		# Range: 1 ~ 9
+		slots = 6
+
+	[tools.slice_map]
+		enabled = false
+		# Default: 0.25
+		# Range: 0.0 ~ 1.0
+		range_multiplier = 0.25
+
+	[tools.bubble_blower]
+		enabled = false
+		# Default: 5
+		# Range: 1 ~ 25
+		stasis_cost = 5
+
+		[tools.bubble_blower.bubble_block]
+			# Default: 1200
+			# Range: 1 ~ 10000
+			lifetime = 1200
+			break_when_touched = true
+			# Default: 200
+			# Range: 1 ~ 1000000
+			max_charges = 200
+
+	[tools.wrench]
+		enabled = false
+		#Allowed Values: MAIN_HAND, OFF_HAND, BOTH, NONE
+		bypass_when_on = "MAIN_HAND"
+
+	[tools.rope_arrow]
+		enabled = false
+		# Default: 32
+		# Range: 1 ~ 256
+		capacity = 32
+		exclusive_to_crossbows = false
+
+	[tools.flute]
+		enabled = false
+		unbound = false
+		# Default: 64
+		# Range: 0 ~ 500
+		unbound_radius = 64
+		# Default: 64
+		# Range: 0 ~ 500
+		bound_distance = 64
+
+	[tools.bomb]
+		enabled = false
+		# Default: 2.0
+		# Range: 0.1 ~ 10.0
+		explosion_radius = 2.0
+		#Allowed Values: ALL, WEAK, NONE
+		break_blocks = "WEAK"
+		# Default: 0
+		# Range: 0 ~ 100000
+		bomb_fuse = 0
+		cooldown = true
+
+		[tools.bomb.blue_bomb]
+			# Default: 5.15
+			# Range: 0.1 ~ 10.0
+			explosion_radius = 5.15
+			#Allowed Values: ALL, WEAK, NONE
+			break_blocks = "WEAK"
+
+	[tools.slingshot]
+		enabled = false
+		# Default: 1.0
+		# Range: 0.0 ~ 5.0
+		range_multiplier = 1.0
+		# Default: 20
+		# Range: 0 ~ 100
+		charge_time = 20
+		# Default: 0.9625
+		# Range: 0.1 ~ 1.0
+		stasis_deceleration = 0.9625
+		unrestricted_enderman_intercept = true
+		allow_buckets = true
+		# Default: 0.5
+		# Range: 0.0 ~ 100.0
+		damageable_damage = 0.5
+		allow_splash_potions = false
+		allow_bombs = false
+		allow_fire_charges = false
+		allow_snowballs = false
+		allow_enderpearls = false
+
+	[tools.antique_ink]
+		enabled = true
+
+[general]
+	#Allowed Values: ALWAYS, CACHED, CACHED_ZIPPED, NEVER
+	dynamic_assets_generation_mode = "CACHED"
+	creative_tab = false
+	dispensers = true
+	sanity_checks_messages = true
+	# Default: 1.0
+	# Range: 0.0 ~ 10.0
+	red_merchant_spawn_multiplier = 1.0
+
+	[tweaks.dragon_banner_pattern]
+		enabled = true
+
+	[tweaks.ai_tweaks]
+		pillagers_use_cannon_boats = true
+		raiders_dismount_boats = true
+
+	[tweaks.golden_apple_disenchant]
+		enabled = true
+
+	[tweaks.traders_open_doors]
+		enabled = true
+
+	[tweaks.dispenser_tweaks]
+		axe_strip = true
+		shoot_ender_pearls = true
+		extract_from_bundles = true
+
+	[tweaks.throwable_bricks]
+		enabled = true
+
+	[tweaks.placeable_sticks]
+		sticks = true
+		blaze_rods = true
+
+	[tweaks.placeable_gunpowder]
+		enabled = true
+		# Default: 2
+		# Range: 0 ~ 20
+		speed = 2
+		# Default: 2
+		# Range: 0 ~ 8
+		spread_age = 2
+
+	[tweaks.raked_gravel]
+		enabled = true
+
+	[tweaks.bottle_xp]
+		enabled = false
+		# Default: 2
+		# Range: 0 ~ 20
+		cost = 2
+		target_block = ""
+
+	[tweaks.map_tweaks]
+		block_map_markers = true
+		#Allowed Values: OFF, WITH_COMPASS, ALWAYS
+		death_marker = "WITH_COMPASS"
+		quill_adventurer_maps = true
+		quill_vanilla_maps = true
+		# Default: 75
+		# Range: 10 ~ 600
+		min_search_radius = 75
+		tinted_blocks_on_maps = true
+
+		[tweaks.map_tweaks.random_adventurer_maps]
+			enabled = true
+			# Default: 100
+			# Range: 1 ~ 1000
+			max_search_radius = 100
+			# Default: 1
+			# Range: 1 ~ 1000
+			max_structures_searches = 1
+
+	[tweaks.placeable_books]
+		enabled = true
+		mixed_books = false
+
+	[tweaks.zombie_horse]
+		zombie_horse_conversion = true
+		# Default: 64
+		# Range: 1 ~ 1000
+		rotten_flesh = 64
+		rideable_underwater = true
+		zombie_horse_inverse_conversion = true
+
+	[tweaks.noteblocks_scare]
+		enabled = true
+
+	[tweaks.bad_luck_tweaks]
+		cat_unluck = true
+		lightning_unluck = true
+
+	[tweaks.item_lore]
+		enabled = true
+
+	[tweaks.sus_recipes]
+		enabled = true
+
+	[tweaks.slimed_effect]
+		enabled = true
+		throwable_slimeballs = true
+		#Allowed Values: NEVER, ALWAYS, NORMAL_DIFFICULTY, HARD_DIFFICULTY
+		hinders_jump = "NORMAL_DIFFICULTY"
+		# Default: 300
+		# Range: 0 ~ 1000
+		duration = 300
+		# Default: 0.15
+		# Range: 0.0 ~ 1.0
+		chance_per_slime_size = 0.15
+
+	[tweaks.clock_and_compass]
+		clock_right_click = true
+		compass_right_click = false
+		works_in_unnatural_dimensions = false
+
+	[tweaks.piston_tweaks]
+		push_block_entities = true
+		cooperative_pistons = true
+		moved_cauldron_filling = true

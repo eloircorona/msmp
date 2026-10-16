@@ -3,9 +3,8 @@
 
 BlockEvents.broken(event => {
   const player = event.player
-  const server = event.server
   if (!player) return
-  QuestService.track(player, server, 'mine', event.block.id)
+  QuestService.track(player, event.server, 'mine', event.block.id)
 })
 
 EntityEvents.death(event => {

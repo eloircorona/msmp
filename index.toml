@@ -5,40 +5,52 @@ file = "GEMINI.md"
 hash = "7c7e43b2e9fba254af20950918dfa6d46a422588878ee35f4cd69ec18472004f"
 
 [[files]]
-file = "kubejs/assets/msmp/blockstates/mesa_banco.json"
-hash = "35dd24c406dd11f235e3d5c75cf0d9e57cfc451c75e0c797b716038450e26d10"
+file = "config/quark-common.toml"
+hash = "517b765d8a193f6943109d93d4295efe8854d4260bed9c09a6a3e08773e20e22"
 
 [[files]]
-file = "kubejs/assets/msmp/blockstates/mesa_de_redaccion.json"
-hash = "36c7e30c006c187654e8c1a24867e568fdac3bfbbd5583045249fdb87969fc6d"
+file = "config/sereneseasons/seasons.toml"
+hash = "1d24f3fb197ae10160a229f8699c056795770e0231239ff71399dbdc25afb2dd"
+
+[[files]]
+file = "config/supplementaries-common.toml"
+hash = "38542bb802affcb860dbb247b3795feb8a4266069b8fc60ac12e550e38c0fe24"
+
+[[files]]
+file = "config/xaero/minimap/default_radar_categories_client.json"
+hash = "518732b1eea3c0d0e4f388192992d707b8c2a9f1308e084d600af5d69a88ce77"
+
+[[files]]
+file = "config/xaero/minimap/default_radar_categories_server.json"
+hash = "d7d9f2858e4d698ea86df32335797fc215ba36c986e235ed7aaff648d8c0aba8"
+
+[[files]]
+file = "docker-compose.override.yml"
+hash = "ecb1b5150e525fcedb26c9e5c14a6ada6c1ebc04cd98c6cf1676115e3861a3cd"
+
+[[files]]
+file = "kubejs/assets/msmp/blockstates/mesa_banco.json"
+hash = "35dd24c406dd11f235e3d5c75cf0d9e57cfc451c75e0c797b716038450e26d10"
 
 [[files]]
 file = "kubejs/assets/msmp/models/block/mesa_banco.json"
 hash = "5fed5bd69d64795172fe0243fee1a7be6f503f24d33a6630d81646745f394f6d"
 
 [[files]]
-file = "kubejs/assets/msmp/models/block/mesa_de_redaccion.json"
-hash = "94ddb64c07b767e3c74f63e2b6d0728878256dece8c812fc58a8a7d0e5efd008"
-
-[[files]]
 file = "kubejs/assets/msmp/models/item/mesa_banco.json"
 hash = "541ca30ada7e136df8a28836355690823379e1eee85373a0ad37ff5160012235"
 
 [[files]]
-file = "kubejs/assets/msmp/models/item/mesa_de_redaccion.json"
-hash = "81cef463aa59797b2eb5591ba6eeb13b3a7fcae2db59bd27297d45f7fc7a8347"
+file = "kubejs/client_scripts/bank_screen.js"
+hash = "f13d58ad053aeaa3c652c0a8196cbdf54c12aa7cc082053f337bb2b9649158ec"
 
 [[files]]
 file = "kubejs/data/msmp/loot_tables/blocks/mesa_banco.json"
 hash = "413e567fb3e168506cf04bbd3b1476ba565688e6d7296545fe911ef471eb50a2"
 
 [[files]]
-file = "kubejs/data/msmp/loot_tables/blocks/mesa_de_redaccion.json"
-hash = "5b61d2e16b39f9f54c68c31dd4f89427136d683c75fb99a508d62ec18e6b65b5"
-
-[[files]]
 file = "kubejs/server_scripts/1_lib/constants.js"
-hash = "1d43dffecfa6f6e573875d1973763d98a97504bcd6de83a5b070e48265f1977b"
+hash = "f9639321a2d7869018b420517449a61b94204ca3bccdb58ad65095ceda32e3fa"
 
 [[files]]
 file = "kubejs/server_scripts/1_lib/inventory.js"
@@ -46,19 +58,15 @@ hash = "5ecafd2167cc212d9946e7590f40bdbc4686d023ecfee6317211c58ab3c870bf"
 
 [[files]]
 file = "kubejs/server_scripts/1_lib/storage.js"
-hash = "2ae7244409c18b3abe7203c7002b9c5a82e328c5f4dafa5e7e8928fbb54bb0de"
+hash = "60f85bf02101385aa3d1b40c0aee3e7275c8981b54367b9d26981e4e49f8825b"
 
 [[files]]
 file = "kubejs/server_scripts/1_lib/text.js"
-hash = "b8cc9f6b4f23bfdf45d16a7ce49c2b697b7b0217afe278c2d6c0912a26661489"
-
-[[files]]
-file = "kubejs/server_scripts/2_domain/bank_service.js"
-hash = "0641126279f63a7931da42365597d45fb7fd851fca7e869b2c2fef54e83e915b"
+hash = "98046412b7adab70760475b44ad04a43e46f178bf0e9355f0dc95c4123252cbb"
 
 [[files]]
 file = "kubejs/server_scripts/2_domain/economy_service.js"
-hash = "4cec7950c1ebb96c55bacc92ab8fd26239bff7666e9efdfbb3c65fa2a1d8d41f"
+hash = "b0a46b02695e4844b90feec7ee572badb17834187878dfe9ba97cbbaa123bcfa"
 
 [[files]]
 file = "kubejs/server_scripts/2_domain/player_service.js"
@@ -66,39 +74,43 @@ hash = "f9f4d17bdfa04e07fa2dbe54da90d2b94ac3a401a552d809b5ffb707461b2b28"
 
 [[files]]
 file = "kubejs/server_scripts/2_domain/quest_service.js"
-hash = "d222081119a7e6ac615df865ab8391e2b822f4c50906d80a591e013f968ff0f5"
+hash = "1ee97876a362598d968c32a4f1860ba9cbb7f7e8d10155e5a111b8093efcf66f"
 
 [[files]]
 file = "kubejs/server_scripts/2_domain/role_service.js"
-hash = "bfa625f1d5beb99c770f9191b5dd93fdf052ceaa022b2671bc56949f9dae6689"
+hash = "c1271f5e6a99fc7cbddab6c336152e55bf30764ea2e008e90c251677ff45039b"
+
+[[files]]
+file = "kubejs/server_scripts/2_domain/treasury_service.js"
+hash = "af3f6d9aec0b65e20307ae40612e03d19794075e9de0e085e3131ce6a86a702b"
 
 [[files]]
 file = "kubejs/server_scripts/3_app/bank_handler.js"
-hash = "da74352776e0cce18b448b97d4033a538a107844f8aa1271ae1bb0f2f2a0568e"
+hash = "b8fda9591eaf5c1157f8fee59b5a57edce02c4390ae961af8388d79e317c81ea"
 
 [[files]]
 file = "kubejs/server_scripts/3_app/chat_handler.js"
-hash = "0f59b02a29333fe5f2dceaa64aeeb0ef2ffe82af705e12753b1b0100b55ee945"
+hash = "5b5ed27bc92c3a6adb645ee348dcc2cdb994f95eb1e9cf5d6de47114dc8c0708"
 
 [[files]]
 file = "kubejs/server_scripts/3_app/cmd_admin.js"
-hash = "58e0c583cbd4da78a204543c92e3337397925fc4903fb033f1bd32725c197cfe"
+hash = "2a1f226a73ef8ae41425c71b6f61926402367691b127ff5f6e4ad57fd5cb6d3f"
 
 [[files]]
 file = "kubejs/server_scripts/3_app/cmd_player.js"
-hash = "295c7ed6c97dfe5372e896874f52bb830ed8509fec4e6d839e7aa13540d69f94"
+hash = "605732b219df7ed52bf44b7c54eda1b21909769693e857392aed99c5d43957c6"
 
 [[files]]
 file = "kubejs/server_scripts/3_app/commands.js"
 hash = "d1f2d73d1f4c572f9173d976ba6761d42057a5047468a13dc2b48af0de461492"
 
 [[files]]
-file = "kubejs/server_scripts/3_app/economy_commands.js"
-hash = "e9dadb2aa776047df059e7054798314dcde53cf28c7ec93119c8cb16283e07f0"
+file = "kubejs/server_scripts/3_app/hud_handler.js"
+hash = "c0489f22c04809b6d491dfc70c90f4c08e84c2ac9a8d8f9236d024ee395a9f91"
 
 [[files]]
-file = "kubejs/server_scripts/3_app/newspaper_handler.js"
-hash = "f3df3157df53784c3cd62e35b110700f1ec45f21ef2d383eb5601d12d60b7bb5"
+file = "kubejs/server_scripts/3_app/justice_handler.js"
+hash = "4e5527dfcff7a9d8ad477dfec66b553200be3e0f10ba4afa7596a4f4940fedfa"
 
 [[files]]
 file = "kubejs/server_scripts/3_app/onboarding_handler.js"
@@ -106,24 +118,23 @@ hash = "2b73b4b2e546c320937cdee9aa17314cf0d91c1a1ec9ef5712f297949a868610"
 
 [[files]]
 file = "kubejs/server_scripts/3_app/quest_handler.js"
-hash = "94fde4cbd6245c773c20361711ec385aea44c69927a189af72063f1a0a1831d3"
+hash = "d4a589736202f738db6695be4bb9c4b1ec13e798d3a8656fd5358fd26652c3d1"
 
 [[files]]
-file = "kubejs/server_scripts/3_app/writing_desk_handler.js"
-hash = "048cdedbed09fa1d198319f47dc494af607e199546a181eb523922f9afe74a9c"
+file = "kubejs/server_scripts/3_app/shop_handler.js"
+hash = "dd0b88e5c48b870d2e831cee368f1ff4e857b03736b575c12011525822d2b994"
+
+[[files]]
+file = "kubejs/server_scripts/3_app/treasury_handler.js"
+hash = "59a07ed5fae30082aa9dad8b44140ac0f690152e55b7b6baa6e7442b758d7df9"
 
 [[files]]
 file = "kubejs/startup_scripts/1_registry/blocks.js"
-hash = "62d4dff32ccdb43d6aa3e98e534b5ac271fd2d0f241d7acc3d10be52551615c3"
+hash = "48b6c992e285825ac33abc15e888df41b29f1e4930e1a6c9f4e6eddcb2eb9511"
 
 [[files]]
 file = "kubejs/startup_scripts/1_registry/items.js"
-hash = "f0f696c671d008e33087fb27b140c8620057e2a2fcc83f03696b2df8b8ff7d88"
-
-[[files]]
-file = "mods/alexs-mobs-1-21-1-port.pw.toml"
-hash = "e3bbf8c3650fd5fc795b36b0b38fdb5bd287b22b6b7d94cde7e35561b0bf5000"
-metafile = true
+hash = "3f75556942fb4eef28b64cff3f7d11bfe8a61001af10e95516b7cef7275c91dd"
 
 [[files]]
 file = "mods/alternate-current.pw.toml"
@@ -151,11 +162,6 @@ hash = "7d885274400fb6f59e64b9fdabf05d2efc4a608427b26da6c2c45190321589d3"
 metafile = true
 
 [[files]]
-file = "mods/citadel.pw.toml"
-hash = "74e817fb0fa9e1ff1ef2aa0e742bdd2504a40c02ab72dc1d5c671d20444cb037"
-metafile = true
-
-[[files]]
 file = "mods/collective.pw.toml"
 hash = "e95dae6d96a6fd51e34a470f3950e543434007afb9d07c3adc07507bbea33219"
 metafile = true
@@ -173,6 +179,11 @@ metafile = true
 [[files]]
 file = "mods/easy-villagers.pw.toml"
 hash = "f1ae54bb7e968ce205f8bdfbb793485ebb9a72bad2285d2bdf72a48be2ecfc0a"
+metafile = true
+
+[[files]]
+file = "mods/endrem.pw.toml"
+hash = "43e084efa5f7f4d41eb1c27c998029cf79d403549c8721e7621f650558f94c6e"
 metafile = true
 
 [[files]]
@@ -197,22 +208,17 @@ metafile = true
 
 [[files]]
 file = "mods/kubejs.pw.toml"
-hash = "018fd970193f808f8c28f873d8b8c69ac9ba134712c7db27fc8d639cb226c9a6"
+hash = "7e0eca275f27b6543f06c36dec433851a956960cbedd2be57d19e159d636bfc1"
+metafile = true
+
+[[files]]
+file = "mods/kubeui.pw.toml"
+hash = "ae8f5fed4396e0bb8d8651adfdfe87a68d074091d01886c4d24493b321844041"
 metafile = true
 
 [[files]]
 file = "mods/lithium.pw.toml"
 hash = "fb6171c8f7ff0d83513b3f75ee5d7a98659559c427d79fb69eb0219639af8a37"
-metafile = true
-
-[[files]]
-file = "mods/lithostitched.pw.toml"
-hash = "d48948d8dbdf7ca96c4bc34be4aed08313d3a7707acab9ed12fb894b470bce58"
-metafile = true
-
-[[files]]
-file = "mods/luckperms.pw.toml"
-hash = "0b0b8ec73c689824125ed9c568deff51b0adca52aee27e49a114b04ff3f73abe"
 metafile = true
 
 [[files]]
@@ -233,6 +239,11 @@ metafile = true
 [[files]]
 file = "mods/moogs-voyager-structures.pw.toml"
 hash = "29c06b3e0967fc14ae933578876dbb94132f98c89e46449c9f33edf60bb3c762"
+metafile = true
+
+[[files]]
+file = "mods/nullscape.pw.toml"
+hash = "dcfbfa39abeaba554c2c5323f9b9a3ec58dfc386aca2d237f73948abdbdc7125"
 metafile = true
 
 [[files]]
@@ -301,11 +312,6 @@ hash = "a1ba6937e12284663e5f9df02c5290339db45eb790316e257e1050241cfd65a0"
 metafile = true
 
 [[files]]
-file = "mods/terralith.pw.toml"
-hash = "f083c3cdf6aadc3b033e20ba8ccc929d5e1b86a0be50b05dc638d7f76dab5024"
-metafile = true
-
-[[files]]
 file = "mods/tpa.pw.toml"
 hash = "b949f4bd306d1cb0d468e2ec2fbcfaab65a199a06b43594be017bcbf746b5ae9"
 metafile = true
@@ -343,6 +349,11 @@ metafile = true
 [[files]]
 file = "mods/yungs-better-dungeons.pw.toml"
 hash = "4c2830674a08ec9f10af13e4d259aa60158bd306a3996d935e678281ec0cb5fd"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-end-island.pw.toml"
+hash = "902c397d5dfc69b497681ba71aa5b8a8a85479b1ccf25157867e4803c16dd65b"
 metafile = true
 
 [[files]]

@@ -1,0 +1,13 @@
+name = "KubeUI"
+filename = "kubeui-0.4.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/43NbktDJ/versions/vjsVSqUf/kubeui-0.4.1.jar"
+hash-format = "sha512"
+hash = "b3d61757b9b848c73a2efa88e066d56f08310972c1bb20f3a0000e9f1d65a44e354ef7f30b01b89c5c2f8db6bd7a2c9fdd3eed20e7a70424189fa59076a2b6f4"
+
+[update]
+[update.modrinth]
+mod-id = "43NbktDJ"
+version = "vjsVSqUf"

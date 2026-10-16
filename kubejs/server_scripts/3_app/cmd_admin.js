@@ -13,11 +13,11 @@ const buildAdminCmds = (Commands, Arguments, event) => [
           Commands.argument('puesto', Arguments.WORD.create(event))
             .executes(ctx => {
               const target  = Arguments.PLAYER.getResult(ctx, 'jugador')
-              const roleKey = ctx.getArgument('puesto', String)
+              const roleKey = Arguments.WORD.getResult(ctx, 'puesto')
 
               if (roleKey === 'quitar') {
                 RoleService.remove(target)
-                ctx.source.sendSuccess(() => MText.system(`Puesto removido de ${target.name.string}.`), true)
+                ctx.source.sendSuccess(MText.system(`Puesto removido de ${target.name.string}.`), true)
                 target.tell(MText.system('Tu puesto fue removido.'))
                 return 1
               }
@@ -29,7 +29,7 @@ const buildAdminCmds = (Commands, Arguments, event) => [
                 return 0
               }
 
-              ctx.source.sendSuccess(() =>
+              ctx.source.sendSuccess(
                 Text.empty()
                   .append(Text.gray(`Puesto de ${target.name.string}: `))
                   .append(MText.roleBadge(roleKey)),
@@ -52,8 +52,8 @@ const buildAdminCmds = (Commands, Arguments, event) => [
     .then(
       Commands.argument('mensaje', Arguments.GREEDY_STRING.create(event))
         .executes(ctx => {
-          const msg = ctx.getArgument('mensaje', String)
-          ctx.source.server.tell(MText.announce(msg))
+          const msg = Arguments.GREEDY_STRING.getResult(ctx, 'mensaje')
+          ctx.source.server.players.forEach(p => p.tell(MText.announce(msg)))
           return 1
         })
     ),

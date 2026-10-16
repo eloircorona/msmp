@@ -1,0 +1,351 @@
+[general]
+	"Enable 'q' Button" = false
+	"'q' Button on the Right" = false
+	"Disable Q Menu Effects" = false
+	"Advancement Visibility Depth" = 2
+	"Shulker Boxes" = ["minecraft:white_shulker_box", "minecraft:orange_shulker_box", "minecraft:magenta_shulker_box", "minecraft:light_blue_shulker_box", "minecraft:yellow_shulker_box", "minecraft:lime_shulker_box", "minecraft:pink_shulker_box", "minecraft:gray_shulker_box", "minecraft:light_gray_shulker_box", "minecraft:cyan_shulker_box", "minecraft:purple_shulker_box", "minecraft:blue_shulker_box", "minecraft:brown_shulker_box", "minecraft:green_shulker_box", "minecraft:red_shulker_box", "minecraft:black_shulker_box"]
+	"Interpret Shulker Box Like Blocks" = true
+	"Print Screen Classnames" = false
+	"Allowed Screens" = []
+	"Use Screen List Blacklist" = false
+	"Enable Onboarding" = false
+	"Chest Button Slot Target" = 27
+	"Generate Programmer Art" = true
+	"Quark V D O" = true
+
+	[general.chest_button_offsets]
+		"Player X" = 0
+		"Player Y" = 0
+		"Top X" = 0
+		"Top Y" = 0
+		"Middle X" = 0
+		"Middle Y" = 0
+
+[categories]
+	automation = false
+	building = true
+	management = false
+	tools = false
+	tweaks = true
+	world = true
+	mobs = false
+	client = true
+	experimental = false
+	oddities = true
+
+[automation]
+	"Chains Connect Blocks" = false
+	Chute = false
+	"Dispensers Place Blocks" = false
+	"Ender Watcher" = false
+	"Feeding Trough" = false
+	Gravisand = false
+	"Iron Rod" = false
+	"Metal Buttons" = false
+	"Obsidian Plate" = false
+	"Pistons Move Tile Entities" = false
+	"Redstone Randomizer" = false
+
+[building]
+	"Celebratory Lamps" = false
+	"Compressed Blocks" = false
+	"Duskbound Blocks" = false
+	"Framed Glass" = false
+	"Glass Item Frame" = true
+	"Gold Bars" = false
+	Grate = false
+	Hedges = true
+	"Hollow Logs" = false
+	"Industrial Palette" = true
+	"Japanese Palette" = true
+	"Leaf Carpet" = false
+	Midori = false
+	"More Brick Types" = false
+	"More Mud Blocks" = false
+	"More Potted Plants" = false
+	"Nether Brick Fence Gate" = false
+	"Rainbow Lamps" = true
+	"Raw Metal Bricks" = false
+	Rope = false
+	"Shear Vines" = false
+	Shingles = false
+	"Soul Sandstone" = false
+	Stools = false
+	"Sturdy Stone" = false
+	Thatch = false
+	"Variant Bookshelves" = true
+	"Variant Chests" = true
+	"Variant Furnaces" = false
+	"Variant Ladders" = true
+	"Vertical Planks" = false
+	"Vertical Slabs" = false
+	"Wooden Posts" = false
+	"More Stone Variants" = false
+
+	[building.glass_item_frame]
+		"Glass Item Frames Update Maps" = true
+		"Glass Item Frames Update Maps Every Tick" = false
+		"Item Render Scale" = 1.5
+
+	[building.rainbow_lamps]
+		"Light Level" = 15
+		"Use Corundum" = false
+
+	[building.variant_bookshelves]
+		"Change Names" = true
+		"Ignore Anti Overlap" = false
+
+	[building.variant_chests]
+		"Enable Reverting Wooden Chests" = true
+		"Replace Worldgen Chests" = true
+		"Structure Chests" = []
+		"Ignore Anti Overlap" = false
+
+	[building.variant_ladders]
+		"Change Names" = true
+		"Ignore Anti Overlap" = false
+
+[management]
+	"Automatic Tool Restock" = false
+	"Easy Transferring" = false
+	"Expanded Item Interactions" = false
+	"Hotbar Changer" = false
+	"Inventory Sorting" = false
+	"Item Sharing" = false
+	"Quick Armor Swapping" = false
+
+[tools]
+	Abacus = false
+	"Ambient Discs" = false
+	"Ancient Tomes" = false
+	"Beacon Redirection" = false
+	"Bottled Cloud" = false
+	"Color Runes" = false
+	"Endermosh Music Disc" = false
+	"Parrot Eggs" = false
+	"Pathfinder Maps" = false
+	Pickarang = false
+	"Seed Pouch" = false
+	"Skull Pikes" = false
+	"Slime In A Bucket" = false
+	"Torch Arrow" = false
+	Trowel = false
+
+[tweaks]
+	"Armed Armor Stands" = false
+	"Automatic Recipe Unlock" = true
+	"Better Elytra Rocket" = false
+	"Campfires Boost Elytra" = false
+	"Compasses Work Everywhere" = false
+	"Coral On Cactus" = false
+	"Diamond Repair" = false
+	"Double Door Opening" = true
+	"Dragon Scales" = false
+	"Dyeable Item Frames" = true
+	Emotes = false
+	"Enhanced Ladders" = false
+	"Glass Shard" = false
+	"Gold Tools Have Fortune" = false
+	"Grab Chickens" = false
+	"Hoe Harvesting" = false
+	"Horses Swim" = true
+	"Improved Sponges" = false
+	"Lock Rotation" = false
+	"Magma Keeps Concrete Powder" = false
+	"Map Washing" = false
+	"More Banner Layers" = true
+	"More Note Block Sounds" = false
+	"More Villagers" = false
+	"No Durability On Cosmetics" = false
+	"Pat The Dogs" = false
+	"Petals On Water" = false
+	"Pig Litters" = false
+	"Poison Potato Usage" = false
+	"Reacharound Placing" = false
+	"Renewable Spore Blossoms" = false
+	"Replace Scaffolding" = false
+	"Safer Creatures" = false
+	"Shulker Packing" = false
+	"Simple Harvest" = true
+	"Slabs To Blocks" = false
+	"Slimes To Magma Cubes" = false
+	"Snow Golem Player Heads" = false
+	"Utility Recipes" = false
+	"Vexes Die With Their Masters" = false
+	"Villagers Follow Emeralds" = true
+	"Zombie Villagers On Normal" = false
+
+	[tweaks.automatic_recipe_unlock]
+		"Ignored Recipes" = []
+		"Force Limited Crafting" = false
+		"Disable Recipe Book" = false
+		"Skip Empty Recipes" = true
+		"Filter Recipe Advancements" = true
+		"Ignore Anti Overlap" = false
+
+	[tweaks.double_door_opening]
+		"Enable Doors" = true
+		"Enable Fence Gates" = true
+		"Ignore Anti Overlap" = false
+
+	[tweaks.more_banner_layers]
+		"Layer Limit" = 16
+
+	[tweaks.simple_harvest]
+		"Empty Hand Harvest" = true
+		"Harvesting Costs Durability" = false
+		"Do Harvesting Search" = true
+		"Villagers Use Simple Harvest" = true
+		"Harvestable Blocks" = ["minecraft:wheat[age=7]", "minecraft:carrots[age=7]", "minecraft:potatoes[age=7]", "minecraft:beetroots[age=3]", "minecraft:nether_wart[age=3]", "minecraft:cocoa[age=2,facing=north],minecraft:cocoa[age=0,facing=north]", "minecraft:cocoa[age=2,facing=south],minecraft:cocoa[age=0,facing=south]", "minecraft:cocoa[age=2,facing=east],minecraft:cocoa[age=0,facing=east]", "minecraft:cocoa[age=2,facing=west],minecraft:cocoa[age=0,facing=west]"]
+		"Right Clickable Blocks" = ["minecraft:sweet_berry_bush", "minecraft:cave_vines"]
+
+[world]
+	"Ancient Wood" = false
+	"Azalea Wood" = false
+	"Big Stone Clusters" = false
+	"Blossom Trees" = false
+	"Cherry Grove Water Petals" = false
+	"Chorus Vegetation" = false
+	Corundum = false
+	"Fairy Rings" = false
+	"Fallen Logs" = false
+	"Glimmering Weald" = false
+	"Monster Box" = true
+	"Nether Obsidian Spikes" = false
+	"New Stone Types" = false
+	"No More Lava Pockets" = false
+	Permafrost = false
+	"Spiral Spires" = true
+
+	[world.monster_box]
+		"Chance Per Chunk" = 0.2
+		"Min Y" = -50
+		"Max Y" = 0
+		"Min Mob Count" = 5
+		"Max Mob Count" = 8
+		"Enable Extra Loot Table" = true
+		"Activation Range" = 2.5
+		"Search Range" = 15
+
+		[world.monster_box.dimensions]
+			"Is Blacklist" = false
+			Dimensions = ["minecraft:overworld"]
+
+	[world.spiral_spires]
+		Rarity = 200
+		Radius = 15
+		"Enable Myalite Viaducts" = true
+		"Myalite Conduit Distance" = 24
+		"Renewable Myalite" = true
+
+		[world.spiral_spires.dimensions]
+			"Is Blacklist" = false
+			Dimensions = ["minecraft:the_end"]
+
+			[world.spiral_spires.biomes.tags]
+				"Biome Tags" = []
+				"Is Blacklist" = true
+
+			[world.spiral_spires.biomes.biomes]
+				Biomes = ["minecraft:end_highlands"]
+				"Is Blacklist" = false
+
+[mobs]
+	Crabs = false
+	Forgotten = false
+	Foxhound = false
+	Shiba = false
+	Stonelings = false
+	Toretoise = false
+	Wraith = false
+
+[client]
+	"Auto Walk Keybind" = false
+	"Back Button Keybind" = false
+	"Buckets Show Inhabitants" = false
+	Camera = false
+	"Chest Searching" = false
+	"Elytra Indicator" = false
+	"Greener Grass" = false
+	"Improved Tooltips" = true
+	"Long Range Pick Block" = false
+	"Microcrafting Helper" = false
+	"Soul Candles" = false
+	"Usage Ticker" = false
+	"Uses For Curses" = true
+	"Variant Animal Textures" = false
+	"Wool Shuts Up Minecarts" = false
+
+	[client.improved_tooltips]
+		"Attribute Tooltips" = true
+		"Food Tooltips" = true
+		"Shulker Tooltips" = true
+		"Map Tooltips" = true
+		"Enchanting Tooltips" = true
+		"Fuel Time Tooltips" = true
+		"Shulker Box Use Colors" = true
+		"Shulker Box Require Shift" = false
+		"Map Require Shift" = false
+		"Food Divisor" = 2
+		"Show Saturation" = true
+		"Food Compression Threshold" = 4
+		"Fuel Time Divisor" = 200
+		"Show Upgrade Status" = true
+		"Animate Up Down Arrows" = true
+		"Enchanting Stacks" = ["minecraft:diamond_sword", "minecraft:diamond_pickaxe", "minecraft:diamond_shovel", "minecraft:diamond_axe", "minecraft:diamond_hoe", "minecraft:diamond_helmet", "minecraft:diamond_chestplate", "minecraft:diamond_leggings", "minecraft:diamond_boots", "minecraft:mace", "minecraft:shears", "minecraft:bow", "minecraft:fishing_rod", "minecraft:crossbow", "minecraft:trident", "minecraft:elytra", "minecraft:shield"]
+		"Enchanting Additional Stacks" = []
+
+	[client.uses_for_curses]
+		"Vanish Pumpkin Overlay" = true
+		"Bind Armor Stands With Player Heads" = true
+
+[experimental]
+	"Adjustable Chat" = false
+	"Climate Control Remover" = false
+	"Game Nerfs" = false
+	"Narrator Readout" = false
+	"Overlay Shader" = false
+	"Spawner Replacer" = false
+	"Vanilla Stone Clusters" = false
+	"Variant Selector" = false
+	"Villager Rerolling Rework" = false
+
+[oddities]
+	Backpack = false
+	Crate = false
+	Magnets = false
+	"Matrix Enchanting" = true
+	Pipes = false
+	"Tiny Potato" = false
+	"Totem Of Holding" = false
+
+	[oddities.matrix_enchanting]
+		"Max Bookshelves" = 15
+		"Piece Price Scale" = 9
+		"Book Enchantability" = 12
+		"Base Max Piece Count" = 3
+		"Base Max Piece Count Book" = 1
+		"Min Level Cutoff" = 8
+		"Charge Per Lapis" = 4
+		"Min Level Scale Factor" = 1.2
+		"Min Level Scale Factor Book" = 2.0
+		"Dupe Multiplier" = 1.4
+		"Incompatible Multiplier" = 0.0
+		"Allow Books" = true
+		"Allow Treasures" = false
+		"Allow Undiscoverable Enchantments" = false
+		"Treasure Whitelist" = []
+		"Undiscoverable Whitelist" = []
+		"Show Tooltip" = true
+		"Normalize Rarity" = true
+		"Allow Underwater Enchanting" = true
+		"Allow Short Block Enchanting" = true
+		"Allow Zero Enchantability" = false
+		"Soul Candles Invert" = true
+		"Disallowed Enchantments" = []
+		"Influences List" = ["minecraft:unbreaking", "minecraft:fire_protection", "minecraft:knockback,minecraft:punch", "minecraft:feather_falling", "minecraft:looting,minecraft:fortune,minecraft:luck_of_the_sea", "minecraft:blast_protection", "minecraft:silk_touch,minecraft:channeling", "minecraft:bane_of_arthropods", "minecraft:protection", "minecraft:respiration,minecraft:loyalty,minecraft:infinity", "minecraft:sweeping_edge,minecraft:multishot", "minecraft:efficiency,minecraft:sharpness,minecraft:lure,minecraft:power,minecraft:impaling,minecraft:quick_charge", "minecraft:aqua_affinity,minecraft:depth_strider,minecraft:riptide", "minecraft:thorns,minecraft:piercing", "minecraft:fire_aspect,minecraft:flame", "minecraft:smite,minecraft:projectile_protection"]
+		"States To Influences" = []
+		"Allow Influencing" = true
+		"Influence Max" = 4
+		"Influence Power" = 0.125
+		"Automatically Convert" = true

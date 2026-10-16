@@ -11,15 +11,11 @@ const PlayerRepo = {
   clearRole: (player) => { player.persistentData.remove(MSMP.KEYS.ROLE) },
 }
 
-const BankRepo = {
-  isActive:    (player) => player.persistentData.getBoolean(MSMP.KEYS.BANK_ACTIVE),
-  setActive:   (player) => { player.persistentData.putBoolean(MSMP.KEYS.BANK_ACTIVE, true) },
-  clearActive: (player) => { player.persistentData.remove(MSMP.KEYS.BANK_ACTIVE) },
-}
-
 const ServerRepo = {
   getString:  (server, key) => server.persistentData.getString(key) || null,
   setString:  (server, key, val) => { server.persistentData.putString(key, val) },
   getBoolean: (server, key) => server.persistentData.getBoolean(key),
   setBoolean: (server, key, val) => { server.persistentData.putBoolean(key, val) },
+  getInt:     (server, key) => server.persistentData.getInt(key) || 0,
+  setInt:     (server, key, val) => { server.persistentData.putInt(key, val) },
 }

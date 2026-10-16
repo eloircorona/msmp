@@ -12,14 +12,14 @@ const buildPlayerCmds = (Commands, Arguments, event) => [
         ctx.source.sendFailure(Text.red('Ejecuta este comando desde el juego.'))
         return 0
       }
-      ctx.source.sendSuccess(() => RoleService.formatCard(player), false)
+      ctx.source.sendSuccess(RoleService.formatCard(player), false)
       return 1
     })
     .then(
       Commands.argument('jugador', Arguments.PLAYER.create(event))
         .executes(ctx => {
           const target = Arguments.PLAYER.getResult(ctx, 'jugador')
-          ctx.source.sendSuccess(() => RoleService.formatCard(target), false)
+          ctx.source.sendSuccess(RoleService.formatCard(target), false)
           return 1
         })
     ),
@@ -27,7 +27,7 @@ const buildPlayerCmds = (Commands, Arguments, event) => [
   // /msmp puestos
   Commands.literal('puestos')
     .executes(ctx => {
-      ctx.source.sendSuccess(() => MText.roleList(), false)
+      ctx.source.sendSuccess(MText.roleList(), false)
       return 1
     }),
 
@@ -36,11 +36,10 @@ const buildPlayerCmds = (Commands, Arguments, event) => [
     .executes(ctx => {
       const player = ctx.source.player
       if (!player) { ctx.source.sendFailure(Text.red('Solo desde el juego.')); return 0 }
-      const server    = ctx.source.server
-      const ids       = QuestService.serverQuestIds(server)
-      const questDefs = ids.map(id => MSMP.QUESTS.POOL.find(q => q.id === id))
-      const data      = QuestService.playerData(player, server)
-      ctx.source.sendSuccess(() => MText.questBoard(questDefs, data), false)
+      ctx.source.sendSuccess(MText.questBoard(
+        QuestService.serverQuestIds(ctx.source.server).map(id => MSMP.QUESTS.POOL.find(q => q.id === id)),
+        QuestService.playerData(player, ctx.source.server),
+      ), false)
       return 1
     })
     .then(

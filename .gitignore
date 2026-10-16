@@ -2,3 +2,5 @@
 *.zip
 *.mrpack
 .env
+kubejs/node_modules/
+kubejs/package-lock.json

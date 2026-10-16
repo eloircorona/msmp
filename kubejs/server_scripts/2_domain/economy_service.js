@@ -1,24 +1,26 @@
 // MSMP — Economy domain service
-// Wallet virtual en esmeraldas. Sin event registration.
-// La moneda física son esmeraldas (minecraft:emerald).
-// La wallet es un entero en persistentData del jugador.
+// Adaptador sobre la ÚNICA moneda del servidor: 'corcholatas' (gestionada por KubeUI).
+// La wallet la lleva KubeUI (balance/pay/charge), no persistentData. Beneficio: /money,
+// historial (KubeUI.currencyHistory) y leaderboard (KubeUI.leaderboard) gratis.
+// La moneda física para depositar en el banco son esmeraldas, 1:1 (ver bank_handler.js).
+
+const CURRENCY = 'corcholatas'
+KubeUIActions.registerCurrency(CURRENCY)
+KubeUIActions.setCurrencyTransferTax(CURRENCY, MSMP.ECONOMY.TAX.TRANSFER)  // comisión /money pay → impuesto
 
 const EconomyService = {
-  getBalance: (player) => {
-    return Math.max(0, player.persistentData.getInt(MSMP.KEYS.WALLET) || 0)
-  },
+  getBalance: (player) => KubeUIActions.balance(player, CURRENCY),
 
-  // Añade `amount` al saldo. No valida origen — la validación es responsabilidad del llamador.
+  // Añade `amount` al saldo. No valida origen — responsabilidad del llamador.
   add: (player, amount) => {
-    const current = EconomyService.getBalance(player)
-    player.persistentData.putInt(MSMP.KEYS.WALLET, current + Math.max(0, Math.floor(amount)))
+    const amt = Math.max(0, Math.floor(amount))
+    if (amt > 0) KubeUIActions.pay(player, CURRENCY, amt)
   },
 
-  // Resta hasta `amount` del saldo. Devuelve lo que realmente restó (puede ser menor si no alcanza).
+  // Resta hasta `amount` del saldo. Devuelve lo que realmente restó.
   subtract: (player, amount) => {
-    const current = EconomyService.getBalance(player)
-    const deduct  = Math.min(current, Math.max(0, Math.floor(amount)))
-    player.persistentData.putInt(MSMP.KEYS.WALLET, current - deduct)
+    const deduct = Math.min(EconomyService.getBalance(player), Math.max(0, Math.floor(amount)))
+    if (deduct > 0) KubeUIActions.charge(player, CURRENCY, deduct)
     return deduct
   },
 
@@ -33,16 +35,14 @@ const EconomyService = {
   },
 
   // Componente de texto con el saldo formateado: "42 ◆"
-  balanceText: (player) => {
-    const bal = EconomyService.getBalance(player)
-    return Text.empty()
-      .append(Text.gold(bal + ' '))
-      .append(Text.green(MSMP.ECONOMY.SYMBOL))
-  },
+  balanceText: (player) =>
+    Text.empty()
+      .append(Text.gold(EconomyService.getBalance(player) + ' '))
+      .append(Text.yellow(MSMP.ECONOMY.SYMBOL)),
 
   // "X ◆" sin referencia a jugador
   amountText: (amount) =>
     Text.empty()
       .append(Text.gold(Math.floor(amount) + ' '))
-      .append(Text.green(MSMP.ECONOMY.SYMBOL)),
+      .append(Text.yellow(MSMP.ECONOMY.SYMBOL)),
 }

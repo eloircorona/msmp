@@ -19,7 +19,7 @@ const RoleService = {
   getCurrent: (player) => {
     const key = PlayerRepo.getRole(player)
     if (!key || !RoleService.isValid(key)) return null
-    return { key, ...MSMP.ROLES[key] }
+    return Object.assign({ key }, MSMP.ROLES[key])
   },
 
   // Tarjeta de jugador para /msmp quien

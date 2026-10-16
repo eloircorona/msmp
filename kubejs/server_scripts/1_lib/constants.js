@@ -19,22 +19,19 @@ const MSMP = {
   KEYS: {
     FIRST_JOIN:    'msmp:first_join',
     ROLE:          'msmp:role',
-    WALLET:        'msmp:wallet',
-    BANK_ACTIVE:   'msmp:bank_active',   // flag de sesión bancaria activa
+    TREASURY:      'msmp:treasury',       // fondo común del pueblo (en corcholatas)
     QUEST_DAY_IDS: 'msmp:quest_day_ids',
     QUEST_PROGRESS: 'msmp:quest_progress',
   },
 
-  // Economía
+  // Economía — corcholatas es moneda 100% virtual (sin item físico).
   ECONOMY: {
-    CURRENCY_ITEM: 'minecraft:emerald',
-    SYMBOL:        '◆',
-  },
+    SYMBOL: '●',   // corcholata = círculo amarillo (ver color en los helpers de texto/HUD)
 
-  // Mesa de redacción
-  PRESS: {
-    COPIES:        5,    // copias producidas por impresión
-    PAPER_COST:    5,    // papel requerido por tirada
+    // Impuesto a las transferencias → tesorería del pueblo.
+    TAX: {
+      TRANSFER: 0.10,   // 10% de cada pago entre jugadores va al fondo común
+    },
   },
 
   // Nivel de permiso mínimo para comandos de admin (Minecraft op level).
