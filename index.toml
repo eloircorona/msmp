@@ -25,118 +25,6 @@ file = "config/xaero/minimap/default_radar_categories_server.json"
 hash = "d7d9f2858e4d698ea86df32335797fc215ba36c986e235ed7aaff648d8c0aba8"
 
 [[files]]
-file = "docker-compose.override.yml"
-hash = "ecb1b5150e525fcedb26c9e5c14a6ada6c1ebc04cd98c6cf1676115e3861a3cd"
-
-[[files]]
-file = "kubejs/assets/msmp/blockstates/mesa_banco.json"
-hash = "35dd24c406dd11f235e3d5c75cf0d9e57cfc451c75e0c797b716038450e26d10"
-
-[[files]]
-file = "kubejs/assets/msmp/models/block/mesa_banco.json"
-hash = "5fed5bd69d64795172fe0243fee1a7be6f503f24d33a6630d81646745f394f6d"
-
-[[files]]
-file = "kubejs/assets/msmp/models/item/mesa_banco.json"
-hash = "541ca30ada7e136df8a28836355690823379e1eee85373a0ad37ff5160012235"
-
-[[files]]
-file = "kubejs/client_scripts/bank_screen.js"
-hash = "f13d58ad053aeaa3c652c0a8196cbdf54c12aa7cc082053f337bb2b9649158ec"
-
-[[files]]
-file = "kubejs/data/msmp/loot_tables/blocks/mesa_banco.json"
-hash = "413e567fb3e168506cf04bbd3b1476ba565688e6d7296545fe911ef471eb50a2"
-
-[[files]]
-file = "kubejs/server_scripts/1_lib/constants.js"
-hash = "f9639321a2d7869018b420517449a61b94204ca3bccdb58ad65095ceda32e3fa"
-
-[[files]]
-file = "kubejs/server_scripts/1_lib/inventory.js"
-hash = "5ecafd2167cc212d9946e7590f40bdbc4686d023ecfee6317211c58ab3c870bf"
-
-[[files]]
-file = "kubejs/server_scripts/1_lib/storage.js"
-hash = "60f85bf02101385aa3d1b40c0aee3e7275c8981b54367b9d26981e4e49f8825b"
-
-[[files]]
-file = "kubejs/server_scripts/1_lib/text.js"
-hash = "98046412b7adab70760475b44ad04a43e46f178bf0e9355f0dc95c4123252cbb"
-
-[[files]]
-file = "kubejs/server_scripts/2_domain/economy_service.js"
-hash = "b0a46b02695e4844b90feec7ee572badb17834187878dfe9ba97cbbaa123bcfa"
-
-[[files]]
-file = "kubejs/server_scripts/2_domain/player_service.js"
-hash = "f9f4d17bdfa04e07fa2dbe54da90d2b94ac3a401a552d809b5ffb707461b2b28"
-
-[[files]]
-file = "kubejs/server_scripts/2_domain/quest_service.js"
-hash = "1ee97876a362598d968c32a4f1860ba9cbb7f7e8d10155e5a111b8093efcf66f"
-
-[[files]]
-file = "kubejs/server_scripts/2_domain/role_service.js"
-hash = "c1271f5e6a99fc7cbddab6c336152e55bf30764ea2e008e90c251677ff45039b"
-
-[[files]]
-file = "kubejs/server_scripts/2_domain/treasury_service.js"
-hash = "af3f6d9aec0b65e20307ae40612e03d19794075e9de0e085e3131ce6a86a702b"
-
-[[files]]
-file = "kubejs/server_scripts/3_app/bank_handler.js"
-hash = "b8fda9591eaf5c1157f8fee59b5a57edce02c4390ae961af8388d79e317c81ea"
-
-[[files]]
-file = "kubejs/server_scripts/3_app/chat_handler.js"
-hash = "5b5ed27bc92c3a6adb645ee348dcc2cdb994f95eb1e9cf5d6de47114dc8c0708"
-
-[[files]]
-file = "kubejs/server_scripts/3_app/cmd_admin.js"
-hash = "2a1f226a73ef8ae41425c71b6f61926402367691b127ff5f6e4ad57fd5cb6d3f"
-
-[[files]]
-file = "kubejs/server_scripts/3_app/cmd_player.js"
-hash = "605732b219df7ed52bf44b7c54eda1b21909769693e857392aed99c5d43957c6"
-
-[[files]]
-file = "kubejs/server_scripts/3_app/commands.js"
-hash = "d1f2d73d1f4c572f9173d976ba6761d42057a5047468a13dc2b48af0de461492"
-
-[[files]]
-file = "kubejs/server_scripts/3_app/hud_handler.js"
-hash = "c0489f22c04809b6d491dfc70c90f4c08e84c2ac9a8d8f9236d024ee395a9f91"
-
-[[files]]
-file = "kubejs/server_scripts/3_app/justice_handler.js"
-hash = "4e5527dfcff7a9d8ad477dfec66b553200be3e0f10ba4afa7596a4f4940fedfa"
-
-[[files]]
-file = "kubejs/server_scripts/3_app/onboarding_handler.js"
-hash = "2b73b4b2e546c320937cdee9aa17314cf0d91c1a1ec9ef5712f297949a868610"
-
-[[files]]
-file = "kubejs/server_scripts/3_app/quest_handler.js"
-hash = "d4a589736202f738db6695be4bb9c4b1ec13e798d3a8656fd5358fd26652c3d1"
-
-[[files]]
-file = "kubejs/server_scripts/3_app/shop_handler.js"
-hash = "dd0b88e5c48b870d2e831cee368f1ff4e857b03736b575c12011525822d2b994"
-
-[[files]]
-file = "kubejs/server_scripts/3_app/treasury_handler.js"
-hash = "59a07ed5fae30082aa9dad8b44140ac0f690152e55b7b6baa6e7442b758d7df9"
-
-[[files]]
-file = "kubejs/startup_scripts/1_registry/blocks.js"
-hash = "48b6c992e285825ac33abc15e888df41b29f1e4930e1a6c9f4e6eddcb2eb9511"
-
-[[files]]
-file = "kubejs/startup_scripts/1_registry/items.js"
-hash = "3f75556942fb4eef28b64cff3f7d11bfe8a61001af10e95516b7cef7275c91dd"
-
-[[files]]
 file = "mods/alternate-current.pw.toml"
 hash = "571293a6ddb6b5ea7b9c1f5454d0cfc584a5aa50397942bea4906d3b54e02e02"
 metafile = true
@@ -207,16 +95,6 @@ hash = "221244d69134b0270a848ae4bc2eb99b73ee997d0beb491d1397d894f60bc3ac"
 metafile = true
 
 [[files]]
-file = "mods/kubejs.pw.toml"
-hash = "7e0eca275f27b6543f06c36dec433851a956960cbedd2be57d19e159d636bfc1"
-metafile = true
-
-[[files]]
-file = "mods/kubeui.pw.toml"
-hash = "ae8f5fed4396e0bb8d8651adfdfe87a68d074091d01886c4d24493b321844041"
-metafile = true
-
-[[files]]
 file = "mods/lithium.pw.toml"
 hash = "fb6171c8f7ff0d83513b3f75ee5d7a98659559c427d79fb69eb0219639af8a37"
 metafile = true
@@ -264,11 +142,6 @@ metafile = true
 [[files]]
 file = "mods/quark.pw.toml"
 hash = "719c1b11d3c9f3204f85a36815b298e84aad29c2e98ec77eb0a07d1ba2783eff"
-metafile = true
-
-[[files]]
-file = "mods/rhino.pw.toml"
-hash = "985a99f7465b68e43b98f3dbe1081b7113d957c7926a8caab163503528910f42"
 metafile = true
 
 [[files]]

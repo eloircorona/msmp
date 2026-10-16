@@ -1,7 +1,0 @@
-# TEMPORAL — prueba de login SIN LuckPerms sin que packwiz lo restaure.
-# Borrar este archivo al terminar la prueba.
-services:
-  mc:
-    environment:
-      PACKWIZ_URL: ""
-      MEMORY: "3G"

@@ -11,7 +11,3 @@ version.txt
 .gitignore
 .github/**
 scripts/**
-kubejs/node_modules/**
-kubejs/package.json
-kubejs/package-lock.json
-kubejs/tests/**
