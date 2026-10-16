@@ -12,7 +12,7 @@ const MText = {
   roleBadge: (roleKey) => {
     const r = MSMP.ROLES[roleKey]
     if (!r) return Text.empty()
-    return Text[r.color](`[${r.symbol} ${r.label}]`)
+    return Text.of(`[${r.symbol} ${r.label}]`).color(r.color)
   },
 
   // "[⚑ Alcalde] Nombre: mensaje"
@@ -20,7 +20,7 @@ const MText = {
     const r = MSMP.ROLES[roleKey]
     if (!r) return Text.white(`${playerName}: ${message}`)
     return Text.empty()
-      .append(Text[r.color](`[${r.symbol} ${r.label}]`))
+      .append(Text.of(`[${r.symbol} ${r.label}]`).color(r.color))
       .append(Text.white(` ${playerName}: `))
       .append(Text.white(message))
   },
@@ -37,7 +37,7 @@ const MText = {
       .append(Text.gold('Puestos del pueblo:\n'))
     const lines = Object.entries(MSMP.ROLES).reduce((acc, [key, r]) => {
       return acc
-        .append(Text[r.color](`  ${r.symbol} ${r.label}: `))
+        .append(Text.of(`  ${r.symbol} ${r.label}: `).color(r.color))
         .append(Text.gray(r.desc + '\n'))
     }, header)
     return lines
