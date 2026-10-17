@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.4.2](https://github.com/eloircorona/msmp/compare/v1.4.1...v1.4.2) (2026-10-17)
+
+
+### Features
+
+* **mods:** add Halloween & roleplay content — Macaw's Holidays, ManyIdeas Halloween, Allhallows, Faz's Roleplay Clothes, Zusz's CoffeeCraft2 ReBrewed (+ ManyIdeas Core, Architectury API deps)
+
+
+### Changes
+
+* **mods:** remove Plasmo Voice
+
 ## [1.4.1](https://github.com/eloircorona/msmp/compare/v1.4.0...v1.4.1) (2026-10-16)
 
 

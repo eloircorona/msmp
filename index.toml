@@ -21,6 +21,11 @@ file = "config/xaero/minimap/default_radar_categories_server.json"
 hash = "d7d9f2858e4d698ea86df32335797fc215ba36c986e235ed7aaff648d8c0aba8"
 
 [[files]]
+file = "mods/allhallows.pw.toml"
+hash = "a4adec3ed89c25d5a172e38e3a9d5f16f4ab627af4565840e5c8f766e5a39b8f"
+metafile = true
+
+[[files]]
 file = "mods/alternate-current.pw.toml"
 hash = "571293a6ddb6b5ea7b9c1f5454d0cfc584a5aa50397942bea4906d3b54e02e02"
 metafile = true
@@ -28,6 +33,11 @@ metafile = true
 [[files]]
 file = "mods/appleskin.pw.toml"
 hash = "d7059efc26b419ddfc43aeef8a3ceddf098edafe0cfbcde611f30bf3e2973de8"
+metafile = true
+
+[[files]]
+file = "mods/architectury-api.pw.toml"
+hash = "657a01a86bbf8617e4726c77df08f708e43a3db12db74b837eebd8eb1d93faae"
 metafile = true
 
 [[files]]
@@ -101,8 +111,23 @@ hash = "e31aebea2649cad495197a6736570f59b286d75c7a08c06a8a33fd84abd94817"
 metafile = true
 
 [[files]]
+file = "mods/macaws-holidays.pw.toml"
+hash = "8acade436959fe60ecc938e9474eaf07935ac842f86137f5e37c39a50c193cad"
+metafile = true
+
+[[files]]
 file = "mods/macaws-roofs.pw.toml"
 hash = "8b0e9d3c66f2a5276a3e1eaaab073f4e41f8d352c6d282e724129c23f0940bfc"
+metafile = true
+
+[[files]]
+file = "mods/manyideas-core.pw.toml"
+hash = "e4090f44b1dd8dfe7504a2422ce9e5c27e67eebfff315087da8c4591fc04e516"
+metafile = true
+
+[[files]]
+file = "mods/manyideas-halloween.pw.toml"
+hash = "ca2510aa2e6b8546a60c2580bf8997628e55b8434c631e49a7688818e9e6efdd"
 metafile = true
 
 [[files]]
@@ -123,11 +148,6 @@ metafile = true
 [[files]]
 file = "mods/open-parties-and-claims.pw.toml"
 hash = "b925c674517d1431755350e11d0450efcad31493a58c9d3b29c30043a2bfa5c5"
-metafile = true
-
-[[files]]
-file = "mods/plasmo-voice.pw.toml"
-hash = "e6c446c8a5de5f57beb5680462574e402bc0e019a011d6f2ad25773d3cc4841f"
 metafile = true
 
 [[files]]
@@ -238,4 +258,9 @@ metafile = true
 [[files]]
 file = "mods/zeta.pw.toml"
 hash = "d1baffd370868590fcb2785146c278df5781d20994022749c53c0f9b2bffc7fc"
+metafile = true
+
+[[files]]
+file = "mods/zuszs-coffeecraft2-rebrewed.pw.toml"
+hash = "6e67f64bc8866c9d836176f0e5ce61d21c311480bfb5fe5c7826d7d48a013eb8"
 metafile = true

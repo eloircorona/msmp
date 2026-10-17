@@ -1,0 +1,13 @@
+name = "Zusz's CoffeeCraft2: ReBrewed"
+filename = "zcoffeecraft2-1.21.1-21.1.205-1.3.2.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "70eafad44454b6169b40a00d8acf20bf2f14f6f5"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9115856
+project-id = 1321829

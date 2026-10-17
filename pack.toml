@@ -1,12 +1,12 @@
 name = "MSMP"
 author = "Eloir Corona"
-version = "1.4.1"
+version = "1.4.2"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "ead58b38ec2f580007a2e0ce832cac29c01ab74504fd39b1fd755572534b483c"
+hash = "2d08a7e6758ecc26ef92df7a4df5398e4663bcfb63186106b95968a0d477e6e8"
 
 [versions]
 minecraft = "1.21.1"
