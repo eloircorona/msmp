@@ -1,10 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = "GEMINI.md"
-hash = "7c7e43b2e9fba254af20950918dfa6d46a422588878ee35f4cd69ec18472004f"
-
-[[files]]
 file = "config/quark-common.toml"
 hash = "517b765d8a193f6943109d93d4295efe8854d4260bed9c09a6a3e08773e20e22"
 

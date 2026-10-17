@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.4.0](https://github.com/eloircorona/msmp/compare/v1.3.0...v1.4.0) (2026-10-16)
+
+
+### Features
+
+* **mods:** swap worldgen stack for End content (Nullscape, End Remastered) ([a4312c7](https://github.com/eloircorona/msmp/commit/a4312c7))
+
+
+### Changes
+
+* **pack:** remove KubeJS/KubeUI custom system, go mods-only ([4a71c95](https://github.com/eloircorona/msmp/commit/4a71c95))
+* **config:** add quark, serene seasons, supplementaries and xaero configs ([0f25076](https://github.com/eloircorona/msmp/commit/0f25076))
+* **mods:** mark LuckPerms as server-side only ([bd4cd12](https://github.com/eloircorona/msmp/commit/bd4cd12))
+
 ## [1.3.0](https://github.com/eloircorona/msmp/compare/v1.2.0...v1.3.0) (2026-07-31)
 
 

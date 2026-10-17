@@ -1,5 +1,7 @@
 .claude/**
 .claude
+GEMINI.md
+MSMP-*.zip
 .env
 .env.example
 docker-compose.yml
