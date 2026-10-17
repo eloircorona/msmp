@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.1](https://github.com/eloircorona/msmp/compare/v1.4.0...v1.4.1) (2026-10-16)
+
+
+### Bug Fixes
+
+* **pack:** reference Nullscape and End Remastered via CurseForge metadata instead of bundling the jars (CF distribution policy)
+
 ## [1.4.0](https://github.com/eloircorona/msmp/compare/v1.3.0...v1.4.0) (2026-10-16)
 
 

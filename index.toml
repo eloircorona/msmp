@@ -66,8 +66,8 @@ hash = "f1ae54bb7e968ce205f8bdfbb793485ebb9a72bad2285d2bdf72a48be2ecfc0a"
 metafile = true
 
 [[files]]
-file = "mods/endrem.pw.toml"
-hash = "43e084efa5f7f4d41eb1c27c998029cf79d403549c8721e7621f650558f94c6e"
+file = "mods/endremastered.pw.toml"
+hash = "3e13ebdac03b7bd4c965ddfcaaab1dd5b3962ac98f5def88af9f1e6e45228f52"
 metafile = true
 
 [[files]]
@@ -117,7 +117,7 @@ metafile = true
 
 [[files]]
 file = "mods/nullscape.pw.toml"
-hash = "dcfbfa39abeaba554c2c5323f9b9a3ec58dfc386aca2d237f73948abdbdc7125"
+hash = "c183fb8843a6c04da0417e5d51c62b2def40b994f0e9f1176243877b104d88a8"
 metafile = true
 
 [[files]]
