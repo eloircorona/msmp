@@ -1,11 +1,7 @@
 PACKWIZ := $(shell which packwiz 2>/dev/null || echo ~/.gvm/pkgsets/go1.23.5/global/bin/packwiz)
 PRISM := flatpak run org.prismlauncher.PrismLauncher
 
-.PHONY: up down restart logs console attach status update export client test
-
-# Corre los tests de KubeJS (requiere: cd kubejs && npm install)
-test:
-	cd kubejs && npm test
+.PHONY: up down restart logs console attach status update export client
 
 # Levanta el servidor (build primero si hay cambios en el pack)
 up:
