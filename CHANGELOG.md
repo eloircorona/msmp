@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.4.4](https://github.com/eloircorona/msmp/compare/v1.4.3...v1.4.4) (2026-10-17)
+
+
+### Features
+
+* **mods:** add JEI (Just Enough Items) recipe/item viewer (+ MezzConfig dep)
+
+
+### Bug Fixes
+
+* **server:** set allow-flight=true so Immersive Aircraft / Paragliders / elytra don't kick players
+
 ## [1.4.3](https://github.com/eloircorona/msmp/compare/v1.4.2...v1.4.3) (2026-10-17)
 
 
