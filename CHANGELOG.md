@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.4.3](https://github.com/eloircorona/msmp/compare/v1.4.2...v1.4.3) (2026-10-17)
+
+
+### Features
+
+* **content:** add Immersive Aircraft, Immersive Melodies, Paragliders, Let's Do Vinery, XP Tome, Villager Names, Lootr, Crash Assistant, NetherPortalFix, SecurityCraft
+* **sleep:** add Easier Sleeping (partial-sleep, 50% to skip night)
+* **client:** add Iris shaders (1.8.14-beta, matches Sodium 0.8.12) + low-req shaderpacks (Sildur's Enhanced Default, BSL)
+* **client:** add Advancement Plaques (+Iceberg), LambDynamicLights, Traveler's Titles, Toast Control (+Placebo)
+* **client:** add Fresh Animations (+EMF/ETF), Cubic Sun & Moon, Clear Glass resource packs (via Modrinth)
+
+
+### Changes
+
+* **mods:** remove TPA (teleport handled by Waystones only)
+* **mods:** update Collective 8.39 → 8.57, YUNG's API 5.1.6 → 5.1.9
+
 ## [1.4.2](https://github.com/eloircorona/msmp/compare/v1.4.1...v1.4.2) (2026-10-17)
 
 

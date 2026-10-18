@@ -1,13 +1,16 @@
 name = "MSMP"
 author = "Eloir Corona"
-version = "1.4.2"
+version = "1.4.3"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "2d08a7e6758ecc26ef92df7a4df5398e4663bcfb63186106b95968a0d477e6e8"
+hash = "b56dffe206765a6ba48d63f864fe107dd1df4a06824f18de640d4e0cd7319854"
 
 [versions]
 minecraft = "1.21.1"
 neoforge = "21.1.244"
+
+[options]
+acceptable-game-versions = ["1.21"]
