@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.7](https://github.com/eloircorona/msmp/compare/v1.4.6...v1.4.7) (2026-10-17)
+
+
+### Bug Fixes
+
+* **mods:** remove Explorer's Compass — its only 1.21.1 build (3.4.0) has a broken minecraft dependency range `[1.21,1.21.1)` that excludes 1.21.1, blocking server startup
+
 ## [1.4.6](https://github.com/eloircorona/msmp/compare/v1.4.5...v1.4.6) (2026-10-17)
 
 
