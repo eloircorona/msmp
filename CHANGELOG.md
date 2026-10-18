@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.6](https://github.com/eloircorona/msmp/compare/v1.4.5...v1.4.6) (2026-10-17)
+
+
+### Bug Fixes
+
+* **mods:** remove Structory + Structory: Towers — only had MC 26.x builds (not 1.21.1), jar crashed with "Missing ModLoader"
+
 ## [1.4.5](https://github.com/eloircorona/msmp/compare/v1.4.4...v1.4.5) (2026-10-17)
 
 
