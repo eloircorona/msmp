@@ -1,0 +1,13 @@
+name = "ZetaFix"
+filename = "zetafix-1.0.0.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "f34ca7f3fcb009441c109a92651becaf08a79167"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8426807
+project-id = 1609209

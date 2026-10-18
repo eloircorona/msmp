@@ -13,6 +13,10 @@ file = "config/supplementaries-common.toml"
 hash = "38542bb802affcb860dbb247b3795feb8a4266069b8fc60ac12e550e38c0fe24"
 
 [[files]]
+file = "config/waystones-common.toml"
+hash = "5d955e181a5c12e5434492816ca47f94cf184e57d0feb2f65a98b3434690a92f"
+
+[[files]]
 file = "config/xaero/minimap/default_radar_categories_client.json"
 hash = "518732b1eea3c0d0e4f388192992d707b8c2a9f1308e084d600af5d69a88ce77"
 
@@ -61,6 +65,16 @@ hash = "7d885274400fb6f59e64b9fdabf05d2efc4a608427b26da6c2c45190321589d3"
 metafile = true
 
 [[files]]
+file = "mods/choicetheorems-overhauled-village.pw.toml"
+hash = "000217304bbb5971cb9dde9081fcb5ea92cc7edcae83321effdcd92b36e2f490"
+metafile = true
+
+[[files]]
+file = "mods/cloth-config.pw.toml"
+hash = "22286fa216349c0767808903a0a38662857d2adee54950a18cbf26c167a06029"
+metafile = true
+
+[[files]]
 file = "mods/collective.pw.toml"
 hash = "c50e06477e4a726489c08203dfa0cfce2802940af8e021cec8e34cbcaa7d3e61"
 metafile = true
@@ -73,6 +87,11 @@ metafile = true
 [[files]]
 file = "mods/crash-assistant.pw.toml"
 hash = "a4fc261260931f28bd822521ffa4082fb685cd79f1ae766d1407e9ca5be6a43e"
+metafile = true
+
+[[files]]
+file = "mods/cristel-lib.pw.toml"
+hash = "c76891545fb28fbcd2c280cf451ad98a463f8a17a50e0eee8a33b3b410743711"
 metafile = true
 
 [[files]]
@@ -103,6 +122,11 @@ metafile = true
 [[files]]
 file = "mods/entity-texture-features-fabric.pw.toml"
 hash = "1ec6f76905ad9e6556dbecf95d8abe16df79815bcad97aa823362af2335a07ad"
+metafile = true
+
+[[files]]
+file = "mods/explorers-compass.pw.toml"
+hash = "e206e53e79c196615bebfc9f5dfa943c11c1361e1c7dc4f8f952c86b95e0f0ca"
 metafile = true
 
 [[files]]
@@ -163,6 +187,11 @@ metafile = true
 [[files]]
 file = "mods/lithium.pw.toml"
 hash = "fb6171c8f7ff0d83513b3f75ee5d7a98659559c427d79fb69eb0219639af8a37"
+metafile = true
+
+[[files]]
+file = "mods/lithostitched.pw.toml"
+hash = "93f98a3019a5ce1bda97af2c3e937aaa2adbe4e4dce46e74b130d32cbfdc80a2"
 metafile = true
 
 [[files]]
@@ -246,6 +275,11 @@ hash = "719c1b11d3c9f3204f85a36815b298e84aad29c2e98ec77eb0a07d1ba2783eff"
 metafile = true
 
 [[files]]
+file = "mods/repurposed-structures.pw.toml"
+hash = "00e909b9e0ad9c7284a5f3c4b41add9211e1e89b35bfc6dcb514dd832d8a7ce8"
+metafile = true
+
+[[files]]
 file = "mods/scalablelux.pw.toml"
 hash = "08c813a5d49b6fd2ed72cf8893e45783982cb9e5eba5b09ccb0cd4dc0904dd01"
 metafile = true
@@ -286,6 +320,21 @@ hash = "6d9eaf43c14c66465e87bf03cc5cb5ecef57b3f2e8063c52f6332d33689d30be"
 metafile = true
 
 [[files]]
+file = "mods/stoneholm.pw.toml"
+hash = "a9f20532b24d959b69c3b7c456ad80c18d031bc71b0dc03642db1017db6d4363"
+metafile = true
+
+[[files]]
+file = "mods/structory-towers.pw.toml"
+hash = "0f4f506b1171a3a7d7b73150721075f5b1bc703c043fa539bcdd72c93e665b94"
+metafile = true
+
+[[files]]
+file = "mods/structory.pw.toml"
+hash = "3c4da8a221086153d491104bba4fd8796dac92d5c3e0b2dc111a6c5d53b65484"
+metafile = true
+
+[[files]]
 file = "mods/supplementaries.pw.toml"
 hash = "a1ba6937e12284663e5f9df02c5290339db45eb790316e257e1050241cfd65a0"
 metafile = true
@@ -293,6 +342,11 @@ metafile = true
 [[files]]
 file = "mods/toast-control.pw.toml"
 hash = "59dba91bb98d9ec0b16dfd33cb975635a5b33a3c816b6c6a8f56d0416396b5e1"
+metafile = true
+
+[[files]]
+file = "mods/towns-and-towers.pw.toml"
+hash = "318b2826182182ff4acd58ffe985c58fe2b403941ec36f41303217bed275feea"
 metafile = true
 
 [[files]]
@@ -313,6 +367,11 @@ metafile = true
 [[files]]
 file = "mods/waystones.pw.toml"
 hash = "cdd6792d04eef2981de616a24f1d89648749c3c7494396f2119cd6ec7ce1e242"
+metafile = true
+
+[[files]]
+file = "mods/when-dungeons-arise.pw.toml"
+hash = "666de5e89e4537b9b758d642952efbd67c25d9d3a88a6ebd481962508851d001"
 metafile = true
 
 [[files]]
@@ -363,6 +422,11 @@ metafile = true
 [[files]]
 file = "mods/zeta.pw.toml"
 hash = "d1baffd370868590fcb2785146c278df5781d20994022749c53c0f9b2bffc7fc"
+metafile = true
+
+[[files]]
+file = "mods/zetafix.pw.toml"
+hash = "05255b3bf174204962d160eece24f0ecda98a5d24b0f66920bc63e63d8cf2b97"
 metafile = true
 
 [[files]]

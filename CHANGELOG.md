@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.4.5](https://github.com/eloircorona/msmp/compare/v1.4.4...v1.4.5) (2026-10-17)
+
+
+### Features
+
+* **structures:** add Towns & Towers, ChoiceTheorem's Overhauled Village, Repurposed Structures, When Dungeons Arise, Structory (+Towers), Explorer's Compass, Stoneholm (+ Cristel Lib, Cloth Config, Lithostitched deps)
+* **waystones:** spawnInVillages = FREQUENT (vanilla + modded villages) + wild waystones already on
+
 ## [1.4.4](https://github.com/eloircorona/msmp/compare/v1.4.3...v1.4.4) (2026-10-17)
 
 

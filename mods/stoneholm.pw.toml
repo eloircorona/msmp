@@ -1,0 +1,13 @@
+name = "Stoneholm"
+filename = "stoneholm-2.1.2+1.21.1.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/zQoJfY3W/versions/gbXkCxQv/stoneholm-2.1.2%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "6f7714d2adbb519988334722162c089e798bf28d5d12aba38d92d040302b9d10f0d2aa4225c9bba0bc14322b355690362279f73a80b242cd7be6b48de64ede71"
+
+[update]
+[update.modrinth]
+mod-id = "zQoJfY3W"
+version = "gbXkCxQv"
