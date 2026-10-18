@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.8](https://github.com/eloircorona/msmp/compare/v1.4.7...v1.4.8) (2026-10-17)
+
+
+### Bug Fixes
+
+* **mods:** re-add Explorer's Compass with a patched minecraft dependency range (`[1.21,1.21.2)`) so it loads on 1.21.1; shipped as a manual jar on server + Prism client (outside packwiz, since the upstream build is broken)
+
 ## [1.4.7](https://github.com/eloircorona/msmp/compare/v1.4.6...v1.4.7) (2026-10-17)
 
 

@@ -1,6 +1,6 @@
 name = "MSMP"
 author = "Eloir Corona"
-version = "1.4.7"
+version = "1.4.8"
 pack-format = "packwiz:1.1.0"
 
 [index]
